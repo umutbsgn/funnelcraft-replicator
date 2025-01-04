@@ -15,6 +15,17 @@ export const Contact = () => {
             Lassen Sie uns gemeinsam besprechen, wie wir Ihr Unternehmen mit KI auf das nächste Level bringen können.
           </p>
         </div>
+        
+        {/* Calendly inline widget */}
+        <div 
+          className="calendly-inline-widget w-full" 
+          data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1" 
+          style={{ 
+            minWidth: "320px",
+            height: "700px",
+            background: "transparent"
+          }}
+        />
       </div>
     </section>
   );
