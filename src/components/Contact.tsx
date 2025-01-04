@@ -11,7 +11,7 @@ export const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-blue-400 mb-2">
             Kostenfreies Erstgespräch
           </h2>
-          <p className="text-lg md:text-xl text-gray-300 text-center max-w-2xl mb-8">
+          <p className="text-lg md:text-xl text-gray-300 text-center max-w-2xl">
             Lassen Sie uns gemeinsam besprechen, wie wir Ihr Unternehmen mit KI auf das nächste Level bringen können.
           </p>
         </div>
