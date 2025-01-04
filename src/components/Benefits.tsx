@@ -13,6 +13,9 @@ export const Benefits = () => {
                 src="/lovable-uploads/2428615f-26f0-4300-95a1-9d09bb4b648f.png" 
                 alt="KI-Integration Roboter" 
                 className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="high"
               />
             </div>
             <h3 className="text-lg md:text-xl font-bold transition-colors duration-300 hover:text-primary">KI-Integration</h3>
@@ -26,6 +29,9 @@ export const Benefits = () => {
                 src="/lovable-uploads/a45de0f7-c4f4-41b1-8c33-495ad5b1759f.png" 
                 alt="Prozessoptimierung Dashboard" 
                 className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="high"
               />
             </div>
             <h3 className="text-lg md:text-xl font-bold transition-colors duration-300 hover:text-primary">Prozessoptimierung</h3>
@@ -39,6 +45,9 @@ export const Benefits = () => {
                 src="/lovable-uploads/d90e55ff-efe8-4e0e-9787-ae9c83e31393.png" 
                 alt="Skalierbarkeit Zahnräder" 
                 className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="high"
               />
             </div>
             <h3 className="text-lg md:text-xl font-bold transition-colors duration-300 hover:text-primary">Skalierbarkeit</h3>
