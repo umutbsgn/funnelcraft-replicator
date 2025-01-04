@@ -2,12 +2,12 @@ export const ProcessSteps = () => {
   return (
     <div className="py-12 md:py-20 px-4 md:px-8 bg-[#0D0D1F]">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 space-y-8">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-12">
+        <div className="text-center mb-16 space-y-12">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-16">
             Starten Sie mit uns <br />
             <span className="text-gray-400">in die Zukunft.</span>
           </h2>
-          <div className="space-y-4">
+          <div className="space-y-6">
             <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
               Planung, Umsetzung, Wartung und Support –
             </p>
