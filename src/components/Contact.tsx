@@ -17,7 +17,7 @@ export const Contact = () => {
         </div>
         
         <div 
-          className="calendly-inline-widget w-full" 
+          className="calendly-inline-widget" 
           data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1" 
           style={{ 
             minWidth: "320px",
@@ -25,6 +25,12 @@ export const Contact = () => {
             background: "transparent",
           }}>
         </div>
+        <script 
+          type="text/javascript" 
+          src="https://assets.calendly.com/assets/external/widget.js" 
+          async
+        >
+        </script>
       </div>
     </section>
   );
