@@ -7,7 +7,10 @@ import { Contact } from "@/components/Contact";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0D0D1F] via-[#151629] to-[#0D0D1F]">
+    <div className="min-h-screen" style={{
+      background: 'rgb(200,222,249)',
+      background: 'radial-gradient(circle, rgba(200,222,249,1) 0%, rgba(110,172,255,1) 36%, rgba(50,133,232,1) 100%)'
+    }}>
       <Hero />
       <Partners />
       <Benefits />
