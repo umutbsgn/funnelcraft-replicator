@@ -1,13 +1,13 @@
 export const Benefits = () => {
   return (
-    <div className="py-12 md:py-20 px-4 md:px-8 bg-secondary">
+    <div className="py-12 md:py-20 px-4 md:px-8 bg-gradient-to-br from-secondary via-secondary/95 to-secondary">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-8 md:mb-16 text-center transition-all duration-500 ease-in-out hover:scale-105 px-4 md:px-0">
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-8 md:mb-16 text-center transition-all duration-500 ease-in-out hover:scale-105 px-4 md:px-0 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300">
           Skalieren Sie ihr Geschäft,<br />
           nicht Ihren Workload.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          <div className="space-y-4 p-4 md:p-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary/80">
+          <div className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-300 ease-in-out hover:bg-black/20 backdrop-blur-sm border border-white/10">
             <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
                 src="/lovable-uploads/2428615f-26f0-4300-95a1-9d09bb4b648f.png" 
@@ -20,7 +20,7 @@ export const Benefits = () => {
               Nutzen Sie modernste KI-Technologie für Ihre Geschäftsprozesse.
             </p>
           </div>
-          <div className="space-y-4 p-4 md:p-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary/80">
+          <div className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-300 ease-in-out hover:bg-black/20 backdrop-blur-sm border border-white/10">
             <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
                 src="/lovable-uploads/a45de0f7-c4f4-41b1-8c33-495ad5b1759f.png" 
@@ -33,7 +33,7 @@ export const Benefits = () => {
               Automatisieren Sie wiederkehrende Aufgaben und steigern Sie die Effizienz.
             </p>
           </div>
-          <div className="space-y-4 p-4 md:p-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary/80">
+          <div className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-300 ease-in-out hover:bg-black/20 backdrop-blur-sm border border-white/10">
             <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
                 src="/lovable-uploads/d90e55ff-efe8-4e0e-9787-ae9c83e31393.png" 
