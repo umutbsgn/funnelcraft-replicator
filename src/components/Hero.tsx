@@ -24,12 +24,17 @@ export const Hero = () => {
         </Button>
       </div>
       <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 transition-all duration-500 ease-in-out hover:scale-105 px-4 md:px-0">
-        Wir sind Ihr <br />
-        Wettbewerbsvorteil.
+        Starten Sie mit uns<br />
+        in die Zukunft.
       </h1>
-      <p className="text-base md:text-lg lg:text-xl mb-6 md:mb-8 max-w-xl md:max-w-2xl text-gray-300 transition-opacity duration-300 hover:opacity-90 px-4 md:px-0">
-        Mit maßgeschneiderten KI-Systemen steigern wir Ihre Effizienz, reduzieren Kosten und revolutionieren Ihre Geschäftsprozesse.
-      </p>
+      <div className="max-w-3xl mx-auto mb-8">
+        <p className="text-xl md:text-2xl text-gray-300 mb-2">
+          Planung, Umsetzung, Wartung und Support –
+        </p>
+        <p className="text-xl md:text-2xl text-gray-300">
+          Ihr Rundum-sorglos-Paket für KI-Lösungen im Unternehmen.
+        </p>
+      </div>
       <Button 
         onClick={scrollToCalendly}
         className="bg-primary text-white px-6 py-4 md:px-8 md:py-6 text-base md:text-lg hover:bg-primary/90 transition-all duration-300 ease-in-out hover:scale-105"
