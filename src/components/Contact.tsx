@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <section id="contact-section" className="py-12 md:py-16 px-4 md:px-8 bg-white/5 backdrop-blur-lg rounded-xl shadow-xl mx-4 md:mx-8 my-8">
+    <section id="contact-section" className="py-12 md:py-16">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col items-center mb-8 md:mb-12 animate-fadeIn opacity-0" style={{ animationDelay: "0.3s" }}>
           <img 
