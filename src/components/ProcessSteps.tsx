@@ -1,6 +1,6 @@
 export const ProcessSteps = () => {
   return (
-    <div className="py-12 md:py-20 px-4 md:px-8">
+    <div className="py-24 md:py-32 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-24 space-y-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent opacity-0 animate-slideInLeft">
