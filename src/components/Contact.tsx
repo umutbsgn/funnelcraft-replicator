@@ -16,31 +16,21 @@ export const Contact = () => {
           </p>
         </div>
         
-        <div className="relative z-10 max-w-4xl mx-auto">
-          <div 
-            className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/10 to-transparent rounded-xl"
-            style={{ 
-              filter: 'blur(40px)',
-              transform: 'scale(0.95)',
-              zIndex: -1 
-            }}
-          />
-          <div 
-            className="calendly-inline-widget" 
-            data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1" 
-            style={{ 
-              minWidth: "320px",
-              height: "700px",
-              background: "transparent",
-              position: "relative",
-              zIndex: 50,
-            }}>
-          </div>
-          <script 
-            type="text/javascript" 
-            src="https://assets.calendly.com/assets/external/widget.js">
-          </script>
+        <div 
+          className="calendly-inline-widget" 
+          data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1" 
+          style={{ 
+            minWidth: "320px",
+            height: "700px",
+            background: "transparent",
+          }}>
         </div>
+        <script 
+          type="text/javascript" 
+          src="https://assets.calendly.com/assets/external/widget.js" 
+          async
+        >
+        </script>
       </div>
     </section>
   );
