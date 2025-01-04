@@ -16,7 +16,7 @@ export const Contact = () => {
           </p>
         </div>
         
-        <div className="relative z-10 max-w-4xl mx-auto">
+        <div className="relative z-10 max-w-4xl mx-auto bg-transparent">
           <div 
             className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/10 to-transparent rounded-xl"
             style={{ 
@@ -26,15 +26,15 @@ export const Contact = () => {
             }}
           />
           <div 
-            className="calendly-inline-widget rounded-xl overflow-hidden shadow-2xl" 
-            data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=6eacff&background_color=transparent&text_color=ffffff" 
+            className="calendly-inline-widget" 
+            data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1&background_color=transparent&text_color=ffffff&primary_color=6eacff" 
             style={{ 
               minWidth: "320px",
               width: "100%",
               height: "700px",
+              background: "transparent !important",
               position: "relative",
-              zIndex: 20,
-              background: "transparent",
+              zIndex: 50,
             }}>
           </div>
         </div>
