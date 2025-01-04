@@ -71,8 +71,18 @@ export default {
           "50%": { transform: "translateY(-20px)" },
         },
         glow: {
-          "0%, 100%": { opacity: "1" },
-          "50%": { opacity: "0.6" },
+          "0%": { 
+            opacity: "1",
+            filter: "drop-shadow(0 0 0 rgba(155, 135, 245, 0))"
+          },
+          "50%": { 
+            opacity: "0.8",
+            filter: "drop-shadow(0 0 10px rgba(155, 135, 245, 0.5))"
+          },
+          "100%": { 
+            opacity: "1",
+            filter: "drop-shadow(0 0 0 rgba(155, 135, 245, 0))"
+          }
         },
       },
       animation: {
