@@ -2,17 +2,19 @@ export const ProcessSteps = () => {
   return (
     <div className="py-12 md:py-20 px-4 md:px-8 bg-[#0D0D1F]">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+        <div className="text-center mb-16 space-y-8">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-12">
             Starten Sie mit uns <br />
             <span className="text-gray-400">in die Zukunft.</span>
           </h2>
-          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-            Planung, Umsetzung, Wartung und Support –
-          </p>
-          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-            Ihr Rundum-sorglos-Paket für KI-Lösungen im Unternehmen.
-          </p>
+          <div className="space-y-4">
+            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+              Planung, Umsetzung, Wartung und Support –
+            </p>
+            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+              Ihr Rundum-sorglos-Paket für KI-Lösungen im Unternehmen.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
