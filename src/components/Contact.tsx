@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <section className="py-16 px-4">
+    <section id="contact-section" className="py-16 px-4">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">Kontakt</h2>
         <div className="calendly-inline-widget" 
