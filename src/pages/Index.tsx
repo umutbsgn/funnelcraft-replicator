@@ -22,25 +22,18 @@ const Index = () => {
 
     const handleIntersect = (entries: IntersectionObserverEntry[]) => {
       entries.forEach(entry => {
-        // Remove animations when element is not in view
-        if (!entry.isIntersecting) {
-          entry.target.classList.remove('animate-revealUp');
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0');
+          entry.target.classList.add('animate-revealUp');
           if (entry.target.previousElementSibling) {
-            entry.target.previousElementSibling.classList.remove('animate-glowBg');
+            entry.target.previousElementSibling.classList.add('animate-glowBg');
           }
-          return;
-        }
-
-        // Add animations when element comes into view
-        entry.target.classList.add('animate-revealUp');
-        if (entry.target.previousElementSibling) {
-          entry.target.previousElementSibling.classList.add('animate-glowBg');
         }
       });
     };
 
-    // Create and store new observers
-    document.querySelectorAll('.section-heading').forEach((heading) => {
+    // Create and store new observers for all section headings
+    document.querySelectorAll('h2').forEach((heading) => {
       const observer = new IntersectionObserver(handleIntersect, observerOptions);
       observer.observe(heading);
       observerRefs.current.push(observer);
@@ -55,46 +48,11 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0D0D1F] via-[#151629] to-[#0D0D1F]">
       <Hero />
-      
-      <div className="w-full h-32 relative overflow-hidden transition-all duration-700">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent transform -translate-y-1/2 blur-xl animate-pulse"></div>
-      </div>
-      
-      <div className="section-heading opacity-0 -translate-y-8">
-        <Partners />
-      </div>
-      
-      <div className="w-full h-32 relative overflow-hidden transition-all duration-700">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent transform -translate-y-1/2 blur-xl animate-pulse" style={{ animationDelay: "0.5s" }}></div>
-      </div>
-      
-      <div className="section-heading opacity-0 -translate-y-8">
-        <Benefits />
-      </div>
-      
-      <div className="w-full h-32 relative overflow-hidden transition-all duration-700">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent transform -translate-y-1/2 blur-xl animate-pulse" style={{ animationDelay: "1s" }}></div>
-      </div>
-      
-      <div className="section-heading opacity-0 -translate-y-8">
-        <Testimonials />
-      </div>
-      
-      <div className="w-full h-32 relative overflow-hidden transition-all duration-700">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent transform -translate-y-1/2 blur-xl animate-pulse" style={{ animationDelay: "1.5s" }}></div>
-      </div>
-      
-      <div className="section-heading opacity-0 -translate-y-8">
-        <ProcessSteps />
-      </div>
-      
-      <div className="w-full h-32 relative overflow-hidden transition-all duration-700">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent transform -translate-y-1/2 blur-xl animate-pulse" style={{ animationDelay: "2s" }}></div>
-      </div>
-      
-      <div className="section-heading opacity-0 -translate-y-8">
-        <Contact />
-      </div>
+      <Partners />
+      <Benefits />
+      <Testimonials />
+      <ProcessSteps />
+      <Contact />
     </div>
   );
 };

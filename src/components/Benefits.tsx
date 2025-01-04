@@ -2,7 +2,7 @@ export const Benefits = () => {
   return (
     <div className="py-24 md:py-32 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-16 md:mb-24 text-center transition-all duration-500 ease-in-out hover:scale-105 px-4 md:px-0 text-white opacity-0 animate-slideInLeft">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-16 md:mb-24 text-center opacity-0 animate-revealUp px-4 md:px-0 text-white" style={{ animationDelay: "0.3s" }}>
           Skalieren Sie ihr Geschäft,<br />
           nicht Ihren Workload.
         </h2>

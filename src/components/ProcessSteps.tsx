@@ -3,7 +3,7 @@ export const ProcessSteps = () => {
     <div className="py-24 md:py-32 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-24 space-y-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent opacity-0 animate-slideInLeft">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-16 opacity-0 animate-revealUp" style={{ animationDelay: "0.3s" }}>
             Starten Sie mit uns <br />
             <span className="text-gray-400">in die Zukunft.</span>
           </h2>
@@ -16,7 +16,6 @@ export const ProcessSteps = () => {
             </p>
           </div>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           <div className="space-y-4 p-6 rounded-lg bg-black/20 backdrop-blur-xl border border-white/10 transition-all duration-300 hover:bg-black/30 opacity-0 animate-fadeIn hover:scale-105" style={{ animationDelay: "0.6s" }}>
             <div className="flex items-center space-x-2">

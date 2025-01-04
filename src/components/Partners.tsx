@@ -1,8 +1,8 @@
 export const Partners = () => {
   return (
-    <div className="py-24 md:py-32 px-4 md:px-8 animate-fadeIn opacity-0" style={{ animationDelay: "0.8s" }}>
+    <div className="py-24 md:py-32 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-center mb-16 md:mb-24 transition-all duration-500 ease-in-out hover:scale-105 px-4 md:px-0">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-16 md:mb-24 text-center opacity-0 animate-revealUp" style={{ animationDelay: "0.3s" }}>
           Unsere Kunden vertrauen schon auf Data-UB
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 place-items-center mx-auto max-w-4xl">
