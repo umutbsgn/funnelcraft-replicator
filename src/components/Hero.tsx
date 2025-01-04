@@ -8,20 +8,20 @@ export const Hero = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-white/10" role="banner">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b border-gray-200" role="banner">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <div className="transition-all duration-300 ease-in-out hover:scale-105">
             <img 
               src="/lovable-uploads/de65568b-6851-426e-9810-672da23bd4a6.png" 
               alt="Data-UB Logo" 
-              className="h-8 sm:h-10 w-auto animate-float filter drop-shadow-lg"
+              className="h-8 sm:h-10 w-auto filter drop-shadow-sm"
               width="120"
               height="40"
             />
           </div>
           <Button 
             onClick={scrollToCalendly}
-            className="bg-primary hover:bg-primary/90 text-white px-4 sm:px-6 py-2 text-sm sm:text-base rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-0.5"
+            className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 text-sm sm:text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 font-medium"
             aria-label="Kostenfreies Erstgespräch buchen"
           >
             Kostenfreies Erstgespräch
@@ -29,16 +29,16 @@ export const Hero = () => {
         </div>
       </header>
       <main className="pt-32 pb-48 min-h-[90vh] flex flex-col justify-center items-center text-center px-4 sm:px-8 lg:px-16" role="main">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-16 md:mb-20 transition-all duration-500 ease-in-out hover:scale-105 animate-slideInLeft opacity-0">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-12 tracking-tight text-gray-900 transition-all duration-500 ease-in-out animate-slideInLeft opacity-0">
           Wir sind Ihr <br />
           <span className="text-primary">Wettbewerbsvorteil.</span>
         </h1>
-        <p className="text-lg sm:text-xl lg:text-2xl mb-12 md:mb-16 max-w-xl md:max-w-2xl text-gray-300 transition-opacity duration-300 hover:opacity-90 animate-slideInRight opacity-0" style={{ animationDelay: "0.3s" }}>
+        <p className="text-lg sm:text-xl lg:text-2xl mb-12 md:mb-16 max-w-xl md:max-w-2xl text-gray-600 leading-relaxed transition-opacity duration-300 hover:opacity-90 animate-slideInRight opacity-0" style={{ animationDelay: "0.3s" }}>
           Mit maßgeschneiderten KI-Systemen steigern wir Ihre Effizienz, reduzieren Kosten und revolutionieren Ihre Geschäftsprozesse.
         </p>
         <Button 
           onClick={scrollToCalendly}
-          className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-4 sm:py-6 text-lg sm:text-xl rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 animate-fadeIn opacity-0"
+          className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg sm:text-xl rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 animate-fadeIn opacity-0 font-medium"
           style={{ animationDelay: "0.6s" }}
           aria-label="Jetzt kostenloses Erstgespräch vereinbaren"
         >
