@@ -15,7 +15,7 @@ export const Benefits = () => {
                 className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                 loading="lazy"
                 decoding="async"
-                fetchpriority="high"
+                fetchPriority="high"
               />
             </div>
             <h3 className="text-lg md:text-xl font-bold transition-colors duration-300 hover:text-primary">KI-Integration</h3>
@@ -31,7 +31,7 @@ export const Benefits = () => {
                 className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                 loading="lazy"
                 decoding="async"
-                fetchpriority="high"
+                fetchPriority="high"
               />
             </div>
             <h3 className="text-lg md:text-xl font-bold transition-colors duration-300 hover:text-primary">Prozessoptimierung</h3>
@@ -47,7 +47,7 @@ export const Benefits = () => {
                 className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                 loading="lazy"
                 decoding="async"
-                fetchpriority="high"
+                fetchPriority="high"
               />
             </div>
             <h3 className="text-lg md:text-xl font-bold transition-colors duration-300 hover:text-primary">Skalierbarkeit</h3>
