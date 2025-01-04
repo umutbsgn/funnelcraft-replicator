@@ -4,10 +4,16 @@ import { Benefits } from "@/components/Benefits";
 import { Testimonials } from "@/components/Testimonials";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { Contact } from "@/components/Contact";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const Index = () => {
+  const observerRefs = useRef<IntersectionObserver[]>([]);
+
   useEffect(() => {
+    // Cleanup previous observers
+    observerRefs.current.forEach(observer => observer.disconnect());
+    observerRefs.current = [];
+
     const observerOptions = {
       root: null,
       rootMargin: '0px',
@@ -16,27 +22,40 @@ const Index = () => {
 
     const handleIntersect = (entries: IntersectionObserverEntry[]) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-revealUp');
-          entry.target.previousElementSibling?.classList.add('animate-glowBg');
+        // Remove animations when element is not in view
+        if (!entry.isIntersecting) {
+          entry.target.classList.remove('animate-revealUp');
+          if (entry.target.previousElementSibling) {
+            entry.target.previousElementSibling.classList.remove('animate-glowBg');
+          }
+          return;
+        }
+
+        // Add animations when element comes into view
+        entry.target.classList.add('animate-revealUp');
+        if (entry.target.previousElementSibling) {
+          entry.target.previousElementSibling.classList.add('animate-glowBg');
         }
       });
     };
 
-    const observer = new IntersectionObserver(handleIntersect, observerOptions);
-    
+    // Create and store new observers
     document.querySelectorAll('.section-heading').forEach((heading) => {
+      const observer = new IntersectionObserver(handleIntersect, observerOptions);
       observer.observe(heading);
+      observerRefs.current.push(observer);
     });
 
-    return () => observer.disconnect();
+    // Cleanup function
+    return () => {
+      observerRefs.current.forEach(observer => observer.disconnect());
+    };
   }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0D0D1F] via-[#151629] to-[#0D0D1F]">
       <Hero />
       
-      {/* Divider 1 - Hero to Partners */}
       <div className="w-full h-32 relative overflow-hidden transition-all duration-700">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent transform -translate-y-1/2 blur-xl animate-pulse"></div>
       </div>
@@ -45,7 +64,6 @@ const Index = () => {
         <Partners />
       </div>
       
-      {/* Divider 2 - Partners to Benefits */}
       <div className="w-full h-32 relative overflow-hidden transition-all duration-700">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent transform -translate-y-1/2 blur-xl animate-pulse" style={{ animationDelay: "0.5s" }}></div>
       </div>
@@ -54,7 +72,6 @@ const Index = () => {
         <Benefits />
       </div>
       
-      {/* Divider 3 - Benefits to Testimonials */}
       <div className="w-full h-32 relative overflow-hidden transition-all duration-700">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent transform -translate-y-1/2 blur-xl animate-pulse" style={{ animationDelay: "1s" }}></div>
       </div>
@@ -63,7 +80,6 @@ const Index = () => {
         <Testimonials />
       </div>
       
-      {/* Divider 4 - Testimonials to ProcessSteps */}
       <div className="w-full h-32 relative overflow-hidden transition-all duration-700">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent transform -translate-y-1/2 blur-xl animate-pulse" style={{ animationDelay: "1.5s" }}></div>
       </div>
@@ -72,7 +88,6 @@ const Index = () => {
         <ProcessSteps />
       </div>
       
-      {/* Divider 5 - ProcessSteps to Contact */}
       <div className="w-full h-32 relative overflow-hidden transition-all duration-700">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent transform -translate-y-1/2 blur-xl animate-pulse" style={{ animationDelay: "2s" }}></div>
       </div>
