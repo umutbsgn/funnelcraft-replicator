@@ -5,7 +5,7 @@ export const Partners = () => {
         <h2 className="text-2xl md:text-3xl font-semibold text-center mb-12">
           Unsere Kunden vertrauen schon auf Data-UB
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 items-center justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 place-items-center mx-auto max-w-4xl">
           <div className="w-32 h-16 flex items-center justify-center">
             <img 
               src="/lovable-uploads/d288eb99-94f1-4299-81b4-05476bed4ab5.png" 
