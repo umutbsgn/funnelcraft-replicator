@@ -8,6 +8,13 @@ export const Hero = () => {
 
   return (
     <div className="relative min-h-[80vh] flex flex-col justify-center items-center text-center px-4 animate-fadeIn">
+      <div className="absolute top-4 left-4">
+        <img 
+          src="/lovable-uploads/de65568b-6851-426e-9810-672da23bd4a6.png" 
+          alt="Logo" 
+          className="h-10 w-auto"
+        />
+      </div>
       <div className="absolute top-4 right-4">
         <Button 
           onClick={scrollToCalendly}
