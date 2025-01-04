@@ -16,17 +16,9 @@ export const Contact = () => {
           </p>
         </div>
         
-        <div 
-          className="calendly-inline-widget w-full"
-          data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1"
-          style={{
-            minWidth: '320px',
-            height: '700px',
-            border: '1px solid rgba(255,255,255,0.1)',
-            borderRadius: '8px',
-            overflow: 'hidden'
-          }}
-        />
+        {/* Calendly inline widget begin */}
+        <div className="calendly-inline-widget" data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1" style={{minWidth:"320px", height:"700px"}}></div>
+        {/* Calendly inline widget end */}
       </div>
     </section>
   );
