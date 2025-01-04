@@ -1,13 +1,13 @@
 export const ProcessSteps = () => {
   return (
-    <div className="py-32 md:py-48 px-4 md:px-8">
+    <div className="py-32 md:py-48 px-4 md:px-8 opacity-0 animate-fadeInScale" style={{ animationDelay: "0.3s" }}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-32 space-y-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-24 opacity-0 animate-revealUp" style={{ animationDelay: "0.3s" }}>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-24 opacity-0 animate-revealUp" style={{ animationDelay: "0.5s" }}>
             Starten Sie mit uns <br />
             <span className="text-gray-400">in die Zukunft.</span>
           </h2>
-          <div className="space-y-6 opacity-0 animate-slideInRight" style={{ animationDelay: "0.3s" }}>
+          <div className="space-y-6 opacity-0 animate-slideInRight" style={{ animationDelay: "0.7s" }}>
             <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
               Planung, Umsetzung, Wartung und Support –
             </p>
@@ -17,7 +17,7 @@ export const ProcessSteps = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          <div className="space-y-4 p-6 rounded-lg bg-black/20 backdrop-blur-xl border border-white/10 transition-all duration-300 hover:bg-black/30 opacity-0 animate-fadeIn hover:scale-105" style={{ animationDelay: "0.6s" }}>
+          <div className="space-y-4 p-6 rounded-lg bg-black/20 backdrop-blur-xl border border-white/10 transition-all duration-500 hover:bg-black/30 opacity-0 animate-fadeIn hover:scale-105" style={{ animationDelay: "0.9s" }}>
             <div className="flex items-center space-x-2">
               <svg className="w-6 h-6 text-primary animate-glow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17 20H7C4.79086 20 3 18.2091 3 16V8C3 5.79086 4.79086 4 7 4H17C19.2091 4 21 5.79086 21 8V16C21 18.2091 19.2091 20 17 20Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -30,8 +30,7 @@ export const ProcessSteps = () => {
               Buchen Sie einen unverbindlichen Discovery Call und profitieren Sie von einer kostenfreien Erstberatung. Im Anschluss erstellen wir für Sie ein individuelles Angebot.
             </p>
           </div>
-
-          <div className="space-y-4 p-6 rounded-lg bg-black/20 backdrop-blur-xl border border-white/10 transition-all duration-300 hover:bg-black/30 opacity-0 animate-fadeIn hover:scale-105" style={{ animationDelay: "0.9s" }}>
+          <div className="space-y-4 p-6 rounded-lg bg-black/20 backdrop-blur-xl border border-white/10 transition-all duration-500 hover:bg-black/30 opacity-0 animate-fadeIn hover:scale-105" style={{ animationDelay: "1.1s" }}>
             <div className="flex items-center space-x-2">
               <svg className="w-6 h-6 text-primary animate-glow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 12H15M9 16H15M17 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H12.5858C12.851 3 13.1054 3.10536 13.2929 3.29289L18.7071 8.70711C18.8946 8.89464 19 9.149 19 9.41421V19C19 20.1046 18.1046 21 17 21Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -42,8 +41,7 @@ export const ProcessSteps = () => {
               Unser Projektstart beginnt mit einem Kick-Off Meeting, in dem wir alle relevanten Informationen und Zugänge von Ihnen erhalten. Anschließend starten wir mit der Entwicklung Ihrer maßgeschneiderten KI-Automatisierung.
             </p>
           </div>
-
-          <div className="space-y-4 p-6 rounded-lg bg-black/20 backdrop-blur-xl border border-white/10 transition-all duration-300 hover:bg-black/30 opacity-0 animate-fadeIn hover:scale-105" style={{ animationDelay: "1.2s" }}>
+          <div className="space-y-4 p-6 rounded-lg bg-black/20 backdrop-blur-xl border border-white/10 transition-all duration-500 hover:bg-black/30 opacity-0 animate-fadeIn hover:scale-105" style={{ animationDelay: "1.3s" }}>
             <div className="flex items-center space-x-2">
               <svg className="w-6 h-6 text-primary animate-glow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.75 12C4.75 7.99594 7.99594 4.75 12 4.75C16.0041 4.75 19.25 7.99594 19.25 12C19.25 16.0041 16.0041 19.25 12 19.25C7.99594 19.25 4.75 16.0041 4.75 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

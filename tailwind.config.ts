@@ -55,20 +55,20 @@ export default {
       },
       keyframes: {
         fadeIn: {
-          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "0%": { opacity: "0", transform: "translateY(30px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         slideInLeft: {
-          "0%": { opacity: "0", transform: "translateX(-50px)" },
+          "0%": { opacity: "0", transform: "translateX(-30px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
         slideInRight: {
-          "0%": { opacity: "0", transform: "translateX(50px)" },
+          "0%": { opacity: "0", transform: "translateX(30px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
         float: {
           "0%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
+          "50%": { transform: "translateY(-8px)" },
           "100%": { transform: "translateY(0)" },
         },
         glow: {
@@ -77,8 +77,8 @@ export default {
             filter: "drop-shadow(0 0 0 rgba(155, 135, 245, 0))"
           },
           "50%": { 
-            opacity: "0.95",
-            filter: "drop-shadow(0 0 5px rgba(155, 135, 245, 0.3))"
+            opacity: "0.98",
+            filter: "drop-shadow(0 0 3px rgba(155, 135, 245, 0.2))"
           },
           "100%": { 
             opacity: "1",
@@ -88,8 +88,8 @@ export default {
         revealUp: {
           "0%": { 
             opacity: "0",
-            transform: "translateY(20px)",
-            filter: "blur(5px)"
+            transform: "translateY(15px)",
+            filter: "blur(3px)"
           },
           "100%": { 
             opacity: "1",
@@ -106,16 +106,27 @@ export default {
             backgroundColor: "rgba(21, 22, 41, 0.8)",
             backdropFilter: "blur(8px)"
           }
+        },
+        fadeInScale: {
+          "0%": { 
+            opacity: "0",
+            transform: "scale(0.95) translateY(20px)"
+          },
+          "100%": { 
+            opacity: "1",
+            transform: "scale(1) translateY(0)"
+          }
         }
       },
       animation: {
-        fadeIn: "fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        slideInLeft: "slideInLeft 1s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        slideInRight: "slideInRight 1s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        float: "float 4s ease-in-out infinite",
-        glow: "glow 4s ease-in-out infinite",
-        revealUp: "revealUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        glowBg: "glowBg 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards"
+        fadeIn: "fadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        slideInLeft: "slideInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        slideInRight: "slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        float: "float 3s ease-in-out infinite",
+        glow: "glow 3s ease-in-out infinite",
+        revealUp: "revealUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        glowBg: "glowBg 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        fadeInScale: "fadeInScale 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards"
       },
     },
   },
