@@ -84,6 +84,28 @@ export default {
             filter: "drop-shadow(0 0 0 rgba(155, 135, 245, 0))"
           }
         },
+        revealUp: {
+          "0%": { 
+            opacity: "0",
+            transform: "translateY(30px)",
+            filter: "blur(8px)"
+          },
+          "100%": { 
+            opacity: "1",
+            transform: "translateY(0)",
+            filter: "blur(0)"
+          }
+        },
+        glowBg: {
+          "0%": { 
+            backgroundColor: "rgba(21, 22, 41, 0)",
+            backdropFilter: "blur(0px)"
+          },
+          "100%": { 
+            backgroundColor: "rgba(21, 22, 41, 0.8)",
+            backdropFilter: "blur(8px)"
+          }
+        }
       },
       animation: {
         fadeIn: "fadeIn 0.5s ease-out forwards",
@@ -91,6 +113,8 @@ export default {
         slideInRight: "slideInRight 0.8s ease-out forwards",
         float: "float 6s ease-in-out infinite",
         glow: "glow 3s ease-in-out infinite",
+        revealUp: "revealUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        glowBg: "glowBg 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards"
       },
     },
   },
