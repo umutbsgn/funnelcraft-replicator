@@ -8,7 +8,7 @@ export const Benefits = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           <div className="space-y-4 p-4 md:p-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary/80">
-            <div className="h-64 md:h-96 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
+            <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
                 src="/lovable-uploads/2428615f-26f0-4300-95a1-9d09bb4b648f.png" 
                 alt="KI-Integration Roboter" 
@@ -21,7 +21,7 @@ export const Benefits = () => {
             </p>
           </div>
           <div className="space-y-4 p-4 md:p-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary/80">
-            <div className="h-48 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
+            <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
                 src="/lovable-uploads/a45de0f7-c4f4-41b1-8c33-495ad5b1759f.png" 
                 alt="Prozessoptimierung Dashboard" 
@@ -34,7 +34,7 @@ export const Benefits = () => {
             </p>
           </div>
           <div className="space-y-4 p-4 md:p-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary/80">
-            <div className="h-48 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
+            <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
                 src="/lovable-uploads/d90e55ff-efe8-4e0e-9787-ae9c83e31393.png" 
                 alt="Skalierbarkeit Zahnräder" 
