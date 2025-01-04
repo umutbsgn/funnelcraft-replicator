@@ -10,7 +10,7 @@ export const Benefits = () => {
           <div className="space-y-4 p-4 md:p-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary/80">
             <div className="h-64 md:h-96 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
-                src="/lovable-uploads/690f223f-ae49-4dc4-9ab2-ca0ba3d958d7.png" 
+                src="/lovable-uploads/2428615f-26f0-4300-95a1-9d09bb4b648f.png" 
                 alt="KI-Integration Roboter" 
                 className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
               />
