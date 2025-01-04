@@ -26,7 +26,7 @@ export const Hero = () => {
         </div>
       </div>
       <div className="pt-32 pb-48 min-h-[90vh] flex flex-col justify-center items-center text-center px-4 md:px-8 lg:px-16">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-10 transition-all duration-500 ease-in-out hover:scale-105 px-4 md:px-0 animate-slideInLeft opacity-0">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-16 md:mb-20 transition-all duration-500 ease-in-out hover:scale-105 px-4 md:px-0 animate-slideInLeft opacity-0">
           Wir sind Ihr <br />
           Wettbewerbsvorteil.
         </h1>
