@@ -25,17 +25,17 @@ export const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="pt-24 min-h-[80vh] flex flex-col justify-center items-center text-center px-4 md:px-8 lg:px-16">
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 transition-all duration-500 ease-in-out hover:scale-105 px-4 md:px-0 animate-slideInLeft opacity-0">
+      <div className="pt-32 pb-48 min-h-[90vh] flex flex-col justify-center items-center text-center px-4 md:px-8 lg:px-16">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-10 transition-all duration-500 ease-in-out hover:scale-105 px-4 md:px-0 animate-slideInLeft opacity-0">
           Wir sind Ihr <br />
           Wettbewerbsvorteil.
         </h1>
-        <p className="text-base md:text-lg lg:text-xl mb-6 md:mb-8 max-w-xl md:max-w-2xl text-gray-300 transition-opacity duration-300 hover:opacity-90 px-4 md:px-0 animate-slideInRight opacity-0" style={{ animationDelay: "0.3s" }}>
+        <p className="text-lg md:text-xl lg:text-2xl mb-12 md:mb-16 max-w-xl md:max-w-2xl text-gray-300 transition-opacity duration-300 hover:opacity-90 px-4 md:px-0 animate-slideInRight opacity-0" style={{ animationDelay: "0.3s" }}>
           Mit maßgeschneiderten KI-Systemen steigern wir Ihre Effizienz, reduzieren Kosten und revolutionieren Ihre Geschäftsprozesse.
         </p>
         <Button 
           onClick={scrollToCalendly}
-          className="bg-primary text-white px-6 py-4 md:px-8 md:py-6 text-base md:text-lg hover:bg-primary/90 transition-all duration-300 ease-in-out hover:scale-105 animate-fadeIn opacity-0"
+          className="bg-primary text-white px-8 py-6 md:px-10 md:py-8 text-lg md:text-xl hover:bg-primary/90 transition-all duration-300 ease-in-out hover:scale-105 animate-fadeIn opacity-0"
           style={{ animationDelay: "0.6s" }}
         >
           Kostenfreies Erstgespräch buchen

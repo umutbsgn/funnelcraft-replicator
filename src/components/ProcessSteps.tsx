@@ -1,9 +1,9 @@
 export const ProcessSteps = () => {
   return (
-    <div className="py-24 md:py-32 px-4 md:px-8">
+    <div className="py-32 md:py-48 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-24 space-y-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-16 opacity-0 animate-revealUp" style={{ animationDelay: "0.3s" }}>
+        <div className="text-center mb-32 space-y-16">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-24 opacity-0 animate-revealUp" style={{ animationDelay: "0.3s" }}>
             Starten Sie mit uns <br />
             <span className="text-gray-400">in die Zukunft.</span>
           </h2>
