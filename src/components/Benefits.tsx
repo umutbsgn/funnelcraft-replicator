@@ -23,7 +23,7 @@ export const Benefits = () => {
           <div className="space-y-4 p-4 md:p-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary/80">
             <div className="h-40 md:h-48 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
-                src="/lovable-uploads/cfcd37e1-5648-4f3b-9c03-b48468910181.png" 
+                src="/lovable-uploads/051f00ef-f497-49c8-88b2-a14b1b749514.png" 
                 alt="Prozessoptimierung Dashboard" 
                 className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
               />
