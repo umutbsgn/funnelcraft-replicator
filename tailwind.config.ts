@@ -55,20 +55,21 @@ export default {
       },
       keyframes: {
         fadeIn: {
-          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         slideInLeft: {
-          "0%": { opacity: "0", transform: "translateX(-100px)" },
+          "0%": { opacity: "0", transform: "translateX(-50px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
         slideInRight: {
-          "0%": { opacity: "0", transform: "translateX(100px)" },
+          "0%": { opacity: "0", transform: "translateX(50px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
         float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-20px)" },
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+          "100%": { transform: "translateY(0)" },
         },
         glow: {
           "0%": { 
@@ -76,8 +77,8 @@ export default {
             filter: "drop-shadow(0 0 0 rgba(155, 135, 245, 0))"
           },
           "50%": { 
-            opacity: "0.8",
-            filter: "drop-shadow(0 0 10px rgba(155, 135, 245, 0.5))"
+            opacity: "0.95",
+            filter: "drop-shadow(0 0 5px rgba(155, 135, 245, 0.3))"
           },
           "100%": { 
             opacity: "1",
@@ -87,8 +88,8 @@ export default {
         revealUp: {
           "0%": { 
             opacity: "0",
-            transform: "translateY(30px)",
-            filter: "blur(8px)"
+            transform: "translateY(20px)",
+            filter: "blur(5px)"
           },
           "100%": { 
             opacity: "1",
@@ -108,11 +109,11 @@ export default {
         }
       },
       animation: {
-        fadeIn: "fadeIn 0.5s ease-out forwards",
-        slideInLeft: "slideInLeft 0.8s ease-out forwards",
-        slideInRight: "slideInRight 0.8s ease-out forwards",
-        float: "float 6s ease-in-out infinite",
-        glow: "glow 3s ease-in-out infinite",
+        fadeIn: "fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        slideInLeft: "slideInLeft 1s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        slideInRight: "slideInRight 1s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        float: "float 4s ease-in-out infinite",
+        glow: "glow 4s ease-in-out infinite",
         revealUp: "revealUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards",
         glowBg: "glowBg 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards"
       },
