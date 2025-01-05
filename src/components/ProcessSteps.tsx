@@ -52,7 +52,7 @@ export const ProcessSteps = () => {
               <h3 className="text-2xl font-bold text-white">Wartung und Support</h3>
             </div>
             <p className="text-gray-400">
-              Führende Unternehmen setzen auf Expertise: Als Ihr KI-Partner kümmern wir uns um den reibungslosen Betrieb, während Sie sich auf Ihr Kerngeschäft konzentrieren.
+              Wir begleiten Sie als Ihr technischer Servicepartner und sichern den stabilen Betrieb Ihrer KI-Anwendungen. Von der  Wartung bis zum Support stehen wir Ihnen als langfristiger Technologiepartner zur Seite.
             </p>
           </div>
         </div>
