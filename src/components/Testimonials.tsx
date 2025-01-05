@@ -8,17 +8,17 @@ export const Testimonials = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
           <div className="bg-black/20 backdrop-blur-xl border border-white/10 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:scale-105 hover:bg-black/30 opacity-100 animate-fadeInScale" style={{ animationDelay: "0.7s" }}>
             <p className="text-base md:text-lg mb-4 transition-opacity duration-300 hover:opacity-90">
-              "Die KI-Integration hat unsere Prozesskosten um 40% gesenkt. Das Team ist begeistert und die Qualität besser denn je."
+              "Das Team hat uns echt begeistert! Von Tag 1 an war klar: Die wissen genau, was sie tun. Besonders cool war, wie schnell alles ging. Unser System läuft jetzt super smooth und das Feedback vom ganzen Team ist grandios. Die beste Entscheidung, die wir treffen konnten!"
             </p>
-            <p className="font-bold transition-colors duration-300 hover:text-primary">- Thomas M.</p>
-            <p className="text-xs md:text-sm text-gray-400">Geschäftsführer</p>
+            <p className="font-bold transition-colors duration-300 hover:text-primary">- Jan Bergmann</p>
+            <p className="text-xs md:text-sm text-gray-400">Head of Digital</p>
           </div>
           <div className="bg-black/20 backdrop-blur-xl border border-white/10 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:scale-105 hover:bg-black/30 opacity-100 animate-fadeInScale" style={{ animationDelay: "0.9s" }}>
             <p className="text-base md:text-lg mb-4 transition-opacity duration-300 hover:opacity-90">
-              "Die Lösung war absolut top und auch vom Global UX Lead der Ottobock als sehr gute Kommunikation bezeichnet. Das Feedback wurde super schnell umgesetzt und geliefert."
+              "Die Zusammenarbeit war einfach genial! Endlich ein Team, das nicht nur zuhört, sondern direkt versteht und umsetzt. Die Kommunikation war top, die Lösungen kreativ und das Ergebnis übertrifft alle Erwartungen. Meine Mitarbeiter sind happy und die Produktivität ist durch die Decke gegangen!"
             </p>
-            <p className="font-bold transition-colors duration-300 hover:text-primary">- Sarah Meyer</p>
-            <p className="text-xs md:text-sm text-gray-400">Product Manager</p>
+            <p className="font-bold transition-colors duration-300 hover:text-primary">- Sarah Weber</p>
+            <p className="text-xs md:text-sm text-gray-400">Geschäftsführerin</p>
           </div>
         </div>
       </div>
