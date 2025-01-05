@@ -10,6 +10,7 @@ const Index = () => {
   const observerRefs = useRef<IntersectionObserver[]>([]);
 
   useEffect(() => {
+    // Cleanup previous observers
     observerRefs.current.forEach(observer => observer.disconnect());
     observerRefs.current = [];
 
@@ -31,12 +32,14 @@ const Index = () => {
       });
     };
 
+    // Create and store new observers for all section headings
     document.querySelectorAll('h2').forEach((heading) => {
       const observer = new IntersectionObserver(handleIntersect, observerOptions);
       observer.observe(heading);
       observerRefs.current.push(observer);
     });
 
+    // Cleanup function
     return () => {
       observerRefs.current.forEach(observer => observer.disconnect());
     };
@@ -44,6 +47,7 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-[#0D0D1F] via-[#151629] to-[#0D0D1F]">
+      {/* Grid Pattern Background */}
       <div 
         className="absolute inset-0 z-0 opacity-0 animate-fadeInScale"
         style={{
@@ -54,6 +58,7 @@ const Index = () => {
         }}
       />
       
+      {/* Content Container */}
       <div className="relative z-10">
         <Hero />
         <Partners />
