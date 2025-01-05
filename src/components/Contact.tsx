@@ -20,18 +20,20 @@ export const Contact = () => {
         
         {/* Calendly Widget Container */}
         <div className="w-full max-w-4xl mx-auto">
+          {/* Calendly inline widget begin */}
           <div 
-            className="calendly-inline-widget"
-            data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1"
+            className="calendly-inline-widget" 
+            data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1" 
             style={{
-              position: 'relative',
               minWidth: '320px',
               height: '700px',
+              width: '100%',
               border: '1px solid rgba(255,255,255,0.1)',
               borderRadius: '0.75rem',
               backgroundColor: 'rgba(0,0,0,0.2)',
             }}
           />
+          {/* Calendly inline widget end */}
         </div>
       </div>
     </section>
