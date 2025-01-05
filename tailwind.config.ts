@@ -25,26 +25,28 @@ export default {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: "#FFFFFF",
+        foreground: "#333333",
         primary: {
-          DEFAULT: "#0A66C2",
+          DEFAULT: "#0288D1",
+          light: "#E0F7FA",
+          dark: "#01579B",
           foreground: "#FFFFFF",
         },
         secondary: {
           DEFAULT: "#F3F2EF",
-          foreground: "#000000",
+          foreground: "#333333",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "#F5F5F5",
+          foreground: "#666666",
         },
         accent: {
-          DEFAULT: "#0A66C2",
+          DEFAULT: "#0277BD",
           foreground: "#FFFFFF",
         },
         popover: {

@@ -46,7 +46,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F3F2EF] via-[#FFFFFF] to-[#E7F3FF]">
+    <div className="min-h-screen bg-gradient-to-br from-primary-light via-background to-[#E7F3FF] bg-[url('/subtle-pattern.png')] bg-repeat bg-opacity-50">
       <Hero />
       <Partners />
       <Benefits />
