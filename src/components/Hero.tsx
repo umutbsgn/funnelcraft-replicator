@@ -21,7 +21,7 @@ export const Hero = () => {
           </div>
           <Button 
             onClick={scrollToCalendly}
-            className="relative bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-2.5 text-sm sm:text-base rounded-lg shadow-[0_0_15px_rgba(155,135,245,0.5)] hover:shadow-[0_0_25px_rgba(155,135,245,0.65)] transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 animate-pulse-subtle before:absolute before:inset-0 before:bg-white/20 before:rounded-lg before:animate-glow-pulse"
+            className="relative bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-2.5 text-sm sm:text-base rounded-lg shadow-[0_0_15px_rgba(155,135,245,0.5)] hover:shadow-[0_0_25px_rgba(155,135,245,0.65)] transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 animate-pulse-subtle overflow-hidden"
             aria-label="Kostenfreies Erstgespräch buchen"
           >
             Kostenfreies Erstgespräch
@@ -45,12 +45,12 @@ export const Hero = () => {
         </p>
         <Button 
           onClick={scrollToCalendly}
-          className="relative bg-primary hover:bg-primary/90 text-white px-8 sm:px-10 py-6 sm:py-8 text-xl sm:text-2xl rounded-xl shadow-[0_0_30px_rgba(155,135,245,0.5)] hover:shadow-[0_0_40px_rgba(155,135,245,0.7)] transition-all duration-300 ease-in-out transform hover:-translate-y-1 animate-fadeIn opacity-0 before:absolute before:inset-0 before:bg-white/20 before:rounded-xl before:animate-glow-pulse"
+          className="relative bg-primary hover:bg-primary/90 text-white px-8 sm:px-10 py-6 sm:py-8 text-xl sm:text-2xl rounded-xl shadow-[0_0_30px_rgba(155,135,245,0.5)] hover:shadow-[0_0_40px_rgba(155,135,245,0.7)] transition-all duration-300 ease-in-out transform hover:-translate-y-1 animate-fadeIn opacity-0 overflow-hidden"
           style={{ animationDelay: "0.6s" }}
           aria-label="Jetzt kostenloses Erstgespräch vereinbaren"
         >
           <span className="relative z-10">Kostenfreies Erstgespräch buchen</span>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-white/20 to-primary/0 animate-shimmer"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-white/30 to-primary/20 animate-pulse-subtle"></div>
         </Button>
       </main>
     </>
