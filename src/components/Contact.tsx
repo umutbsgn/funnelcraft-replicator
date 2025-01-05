@@ -10,21 +10,23 @@ export const Contact = () => {
             width="160"
             height="64"
           />
-          <h2 id="contact-title" className="text-4xl md:text-5xl lg:text-6xl font-bold text-center opacity-0 animate-revealUp mb-8" style={{ animationDelay: "0.3s" }}>
+          <h2 id="contact-title" className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8">
             Kostenfreies Erstgespräch
           </h2>
-          <p className="text-xl md:text-2xl text-gray-300 text-center max-w-2xl mb-12 opacity-0 animate-revealUp" style={{ animationDelay: "0.6s" }}>
+          <p className="text-xl md:text-2xl text-gray-300 text-center max-w-2xl mb-12">
             Lassen Sie uns gemeinsam besprechen, wie wir Ihr Unternehmen mit KI auf das nächste Level bringen können.
           </p>
         </div>
         
         <div 
-          className="calendly-inline-widget rounded-xl shadow-2xl bg-black/20 backdrop-blur-xl" 
+          className="calendly-inline-widget rounded-xl shadow-2xl bg-black/20 backdrop-blur-xl opacity-100" 
           data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1" 
           style={{
             minWidth: "320px",
             height: "700px",
-            background: "transparent"
+            background: "transparent",
+            display: "block",
+            visibility: "visible"
           }}
           role="complementary"
           aria-label="Kalenderbuchung"

@@ -63,7 +63,7 @@ export default {
             boxShadow: "0 0 15px 5px rgba(155, 135, 245, 0.4)",
           },
           "50%": {
-            boxShadow: "0 0 25px 8px rgba(155, 135, 245, 0.6)",
+            boxShadow: "0 0 20px 6px rgba(155, 135, 245, 0.5)",
           },
         },
         floatingOrb: {
@@ -144,7 +144,7 @@ export default {
       },
       animation: {
         starTwinkle: "starTwinkle 3s ease-in-out infinite",
-        buttonGlow: "buttonGlow 3s ease-in-out infinite",
+        buttonGlow: "buttonGlow 6s ease-in-out infinite", // Slowed down from 3s to 6s
         floatingOrb: "floatingOrb 6s ease-in-out infinite",
         textGlow: "textGlow 3s ease-in-out infinite",
         float: "float 3s ease-in-out infinite",
