@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <section id="contact-section" className="relative py-32 md:py-48 bg-secondary/30">
+    <section id="contact-section" className="relative py-32 md:py-48">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center mb-16 md:mb-24">
           <img 
@@ -19,15 +19,14 @@ export const Contact = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-4xl mx-auto bg-secondary/30 p-4 rounded-lg">
+      <div className="w-full max-w-4xl mx-auto">
         <div 
           className="calendly-inline-widget" 
           data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1&background_color=151629&text_color=ffffff" 
           style={{
             minWidth: "320px",
             height: "700px",
-            border: "none",
-            overflow: "hidden"
+            border: "none"
           }}
         ></div>
       </div>
