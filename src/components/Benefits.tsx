@@ -24,6 +24,11 @@ export const Benefits = () => {
               setTimeout(() => {
                 entry.target.classList.remove('opacity-0', 'translate-x-[-50px]');
                 entry.target.classList.add('opacity-100', 'translate-x-0', 'transition-all', 'duration-1000');
+                
+                // Add glow effect after the reveal animation
+                setTimeout(() => {
+                  entry.target.classList.add('hover:bg-black/30', 'hover:shadow-[0_0_15px_rgba(155,135,245,0.3)]');
+                }, 1000); // Add glow effect 1s after the reveal
               }, index * 1500); // 1.5s (1500ms) delay between each animation
               observer.unobserve(entry.target);
             }
@@ -51,7 +56,7 @@ export const Benefits = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           <article 
             ref={el => articleRefs.current[0] = el}
-            className="opacity-0 translate-x-[-50px] space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 group"
+            className="opacity-0 translate-x-[-50px] space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out backdrop-blur-xl bg-black/20 border border-white/10 group"
           >
             <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
@@ -72,7 +77,7 @@ export const Benefits = () => {
           
           <article 
             ref={el => articleRefs.current[1] = el}
-            className="opacity-0 translate-x-[-50px] space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 group"
+            className="opacity-0 translate-x-[-50px] space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out backdrop-blur-xl bg-black/20 border border-white/10 group"
           >
             <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
@@ -93,7 +98,7 @@ export const Benefits = () => {
           
           <article 
             ref={el => articleRefs.current[2] = el}
-            className="opacity-0 translate-x-[-50px] space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 group"
+            className="opacity-0 translate-x-[-50px] space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out backdrop-blur-xl bg-black/20 border border-white/10 group"
           >
             <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
