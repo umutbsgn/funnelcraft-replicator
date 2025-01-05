@@ -46,13 +46,28 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0D0D1F] via-[#151629] to-[#0D0D1F]">
-      <Hero />
-      <Partners />
-      <Benefits />
-      <Testimonials />
-      <ProcessSteps />
-      <Contact />
+    <div className="relative min-h-screen bg-gradient-to-br from-[#0D0D1F] via-[#151629] to-[#0D0D1F]">
+      {/* Network Background Image */}
+      <div 
+        className="absolute inset-0 z-0 opacity-10"
+        style={{
+          backgroundImage: "url('/lovable-uploads/fe3dee95-799a-4ad3-bb1b-3cf938f5a3fa.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          mixBlendMode: 'screen'
+        }}
+      />
+      
+      {/* Content Container */}
+      <div className="relative z-10">
+        <Hero />
+        <Partners />
+        <Benefits />
+        <Testimonials />
+        <ProcessSteps />
+        <Contact />
+      </div>
     </div>
   );
 };
