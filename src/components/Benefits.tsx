@@ -21,7 +21,7 @@ export const Benefits = () => {
             </div>
             <h3 className="text-lg md:text-xl font-bold transition-colors duration-300 group-hover:text-primary">KI Chatbots</h3>
             <p className="text-sm md:text-base text-gray-300 transition-opacity duration-300 group-hover:opacity-90">
-              Unsere intelligenten Chatbots revolutionieren Ihre digitale Kommunikation. Sie verstehen komplexe Kundenanfragen, lernen kontinuierlich dazu und liefern präzise Lösungen – zu jeder Zeit.
+              Unsere intelligenten Chatbots revolutionieren Ihre digitale Kommunikation. Sie verstehen komplexe Kundenanfragen, lernen kontinuierlich dazu und liefern präzise Lösungen.
             </p>
           </article>
           
