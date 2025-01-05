@@ -87,7 +87,25 @@
     @apply leading-relaxed text-foreground text-base md:text-lg;
   }
   a {
-    @apply text-accent hover:text-accent/90 underline-offset-4 hover:underline transition-colors duration-200;
+    @apply text-accent hover:text-primary-dark underline-offset-4 hover:underline transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-card shadow-card hover:shadow-card-hover transition-shadow duration-300 rounded-lg p-6;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-button hover:bg-gradient-button-hover text-white px-6 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-alt {
+    @apply bg-primary-lighter bg-opacity-10;
   }
 }
 

@@ -30,7 +30,9 @@ export default {
         primary: {
           DEFAULT: "#0288D1",
           light: "#E0F7FA",
+          lighter: "#B3E5FC",
           dark: "#01579B",
+          hover: "#039BE5",
           foreground: "#FFFFFF",
         },
         secondary: {
@@ -54,84 +56,19 @@ export default {
           foreground: "hsl(var(--popover-foreground))",
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "#FFFFFF",
+          foreground: "#333333",
         },
       },
-      keyframes: {
-        fadeIn: {
-          "0%": { opacity: "0", transform: "translateY(30px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        slideInLeft: {
-          "0%": { opacity: "0", transform: "translateX(-30px)" },
-          "100%": { opacity: "1", transform: "translateX(0)" },
-        },
-        slideInRight: {
-          "0%": { opacity: "0", transform: "translateX(30px)" },
-          "100%": { opacity: "1", transform: "translateX(0)" },
-        },
-        float: {
-          "0%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-8px)" },
-          "100%": { transform: "translateY(0)" },
-        },
-        glow: {
-          "0%": { 
-            opacity: "1",
-            filter: "drop-shadow(0 0 0 rgba(10, 102, 194, 0))"
-          },
-          "50%": { 
-            opacity: "0.98",
-            filter: "drop-shadow(0 0 3px rgba(10, 102, 194, 0.2))"
-          },
-          "100%": { 
-            opacity: "1",
-            filter: "drop-shadow(0 0 0 rgba(10, 102, 194, 0))"
-          }
-        },
-        revealUp: {
-          "0%": { 
-            opacity: "0",
-            transform: "translateY(15px)",
-            filter: "blur(3px)"
-          },
-          "100%": { 
-            opacity: "1",
-            transform: "translateY(0)",
-            filter: "blur(0)"
-          }
-        },
-        glowBg: {
-          "0%": { 
-            backgroundColor: "rgba(10, 102, 194, 0)",
-            backdropFilter: "blur(0px)"
-          },
-          "100%": { 
-            backgroundColor: "rgba(10, 102, 194, 0.8)",
-            backdropFilter: "blur(8px)"
-          }
-        },
-        fadeInScale: {
-          "0%": { 
-            opacity: "0",
-            transform: "scale(0.95) translateY(20px)"
-          },
-          "100%": { 
-            opacity: "1",
-            transform: "scale(1) translateY(0)"
-          }
-        }
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(circle, #FFFFFF 0%, #E0F7FA 100%)',
+        'gradient-linear': 'linear-gradient(to right, #E0F7FA 0%, #B3E5FC 100%)',
+        'gradient-button': 'linear-gradient(to right, #0277BD 0%, #01579B 100%)',
+        'gradient-button-hover': 'linear-gradient(to right, #039BE5 0%, #0288D1 100%)',
       },
-      animation: {
-        fadeIn: "fadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        slideInLeft: "slideInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        slideInRight: "slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        float: "float 3s ease-in-out infinite",
-        glow: "glow 3s ease-in-out infinite",
-        revealUp: "revealUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        glowBg: "glowBg 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        fadeInScale: "fadeInScale 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards"
+      boxShadow: {
+        'card': '0 4px 6px -1px rgba(179, 229, 252, 0.1), 0 2px 4px -1px rgba(179, 229, 252, 0.06)',
+        'card-hover': '0 10px 15px -3px rgba(179, 229, 252, 0.2), 0 4px 6px -2px rgba(179, 229, 252, 0.1)',
       },
     },
   },
