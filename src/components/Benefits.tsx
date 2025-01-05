@@ -39,7 +39,7 @@ export const Benefits = () => {
             </div>
             <h3 className="text-lg md:text-xl font-bold transition-colors duration-300 group-hover:text-primary">KI-Telefonagenten</h3>
             <p className="text-sm md:text-base text-gray-300 transition-opacity duration-300 group-hover:opacity-90">
-              Unsere intelligenten Sprachassistenten meistern alle Telefonie-Aufgaben. Sie führen natürliche Gespräche, erkennen Anliegen präzise und lösen diese effizient – rund um die Uhr. Das System lernt kontinuierlich aus jedem Kontakt und optimiert sich selbst.
+              Unsere intelligenten Sprachassistenten meistern alle Telefon-Aufgaben. Sie führen natürliche Gespräche, erkennen Anliegen präzise und lösen diese effizient – rund um die Uhr.
             </p>
           </article>
           
