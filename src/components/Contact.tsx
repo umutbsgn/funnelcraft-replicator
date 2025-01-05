@@ -19,11 +19,12 @@ export const Contact = () => {
         </div>
       </div>
 
-      {/* Calendly Widget Container */}
       <div className="w-full max-w-4xl mx-auto">
-        {/* Calendly inline widget begin */}
-        <div className="calendly-inline-widget" data-url="https://calendly.com/data_ub/discovery_call" style={{minWidth:"320px",height:"700px"}}></div>
-        {/* Calendly inline widget end */}
+        <div 
+          className="calendly-inline-widget" 
+          data-url="https://calendly.com/data_ub/discovery_call" 
+          style={{minWidth:"320px",height:"700px"}}
+        ></div>
       </div>
     </section>
   );
