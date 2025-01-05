@@ -2,9 +2,9 @@ export const Contact = () => {
   return (
     <section 
       id="contact-section" 
-      className="flex flex-col items-center justify-center min-h-screen py-16"
+      className="flex flex-col items-center justify-center min-h-screen"
       style={{
-        backgroundColor: "#151629",
+        backgroundColor: "#151629"
       }}
     >
       <div 
