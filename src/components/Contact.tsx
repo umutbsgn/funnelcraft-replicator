@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export const Contact = () => {
   useEffect(() => {
@@ -46,7 +47,7 @@ export const Contact = () => {
   }, []);
 
   return (
-    <section id="contact-section" className="w-full py-20 flex justify-center items-center">
+    <section id="contact-section" className="w-full py-20 flex flex-col justify-center items-center">
       <div 
         className="calendly-inline-widget w-full max-w-4xl mx-auto rounded-lg shadow-xl" 
         data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1&background_color=151629&text_color=ffffff" 
@@ -57,6 +58,14 @@ export const Contact = () => {
           backgroundColor: "#151629",
         }}
       />
+      <div className="w-full max-w-4xl mx-auto mt-4 flex justify-end gap-4 text-sm text-gray-400">
+        <Link to="/impressum" className="hover:text-primary transition-colors">
+          Impressum
+        </Link>
+        <Link to="/datenschutz" className="hover:text-primary transition-colors">
+          Datenschutzerklärung
+        </Link>
+      </div>
     </section>
   );
 };
