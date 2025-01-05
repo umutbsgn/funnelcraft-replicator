@@ -8,9 +8,34 @@ export const Contact = () => {
     script.async = true;
     document.body.appendChild(script);
 
+    // Function to remove Calendly branding
+    const removeCalendlyBranding = () => {
+      const brandingElement = document.querySelector('a[href*="calendly.com/de"]');
+      if (brandingElement) {
+        brandingElement.remove();
+      }
+    };
+
+    // Set up an observer to watch for the branding element
+    const observer = new MutationObserver((mutations, obs) => {
+      const brandingElement = document.querySelector('a[href*="calendly.com/de"]');
+      if (brandingElement) {
+        removeCalendlyBranding();
+        // Keep observing in case Calendly re-adds the element
+        setTimeout(removeCalendlyBranding, 1000); // Additional check after 1 second
+      }
+    });
+
+    // Start observing the document with the configured parameters
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+
     return () => {
       // Cleanup
       document.body.removeChild(script);
+      observer.disconnect();
     };
   }, []);
 
