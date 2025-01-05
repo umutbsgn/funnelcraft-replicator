@@ -54,17 +54,33 @@ export default {
         },
       },
       keyframes: {
-        fadeIn: {
-          "0%": { opacity: "0", transform: "translateY(30px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
+        starTwinkle: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.3" },
         },
-        slideInLeft: {
-          "0%": { opacity: "0", transform: "translateX(-30px)" },
-          "100%": { opacity: "1", transform: "translateX(0)" },
+        buttonGlow: {
+          "0%, 100%": {
+            boxShadow: "0 0 15px 5px rgba(155, 135, 245, 0.4)",
+          },
+          "50%": {
+            boxShadow: "0 0 25px 8px rgba(155, 135, 245, 0.6)",
+          },
         },
-        slideInRight: {
-          "0%": { opacity: "0", transform: "translateX(30px)" },
-          "100%": { opacity: "1", transform: "translateX(0)" },
+        floatingOrb: {
+          "0%, 100%": {
+            transform: "translate(0, 0)",
+          },
+          "50%": {
+            transform: "translate(10px, -10px)",
+          },
+        },
+        textGlow: {
+          "0%, 100%": {
+            textShadow: "0 0 10px rgba(155, 135, 245, 0.5)",
+          },
+          "50%": {
+            textShadow: "0 0 20px rgba(155, 135, 245, 0.8)",
+          },
         },
         float: {
           "0%": { transform: "translateY(0)" },
@@ -127,9 +143,10 @@ export default {
         }
       },
       animation: {
-        fadeIn: "fadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        slideInLeft: "slideInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        slideInRight: "slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        starTwinkle: "starTwinkle 3s ease-in-out infinite",
+        buttonGlow: "buttonGlow 3s ease-in-out infinite",
+        floatingOrb: "floatingOrb 6s ease-in-out infinite",
+        textGlow: "textGlow 3s ease-in-out infinite",
         float: "float 3s ease-in-out infinite",
         glow: "glow 3s ease-in-out infinite",
         revealUp: "revealUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards",

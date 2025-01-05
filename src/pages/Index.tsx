@@ -47,14 +47,34 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-[#0D0D1F] via-[#151629] to-[#0D0D1F]">
+      {/* Starry Background */}
+      <div className="fixed inset-0 z-0">
+        {[...Array(50)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute animate-starTwinkle"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              width: `${Math.random() * 2 + 1}px`,
+              height: `${Math.random() * 2 + 1}px`,
+              backgroundColor: '#FFFFFF',
+              borderRadius: '50%',
+              opacity: Math.random() * 0.7 + 0.3,
+              animationDelay: `${Math.random() * 3}s`,
+            }}
+          />
+        ))}
+      </div>
+
       {/* Grid Pattern Background */}
       <div 
-        className="absolute inset-0 z-0 opacity-0 animate-fadeInScale"
+        className="fixed inset-0 z-0 opacity-5"
         style={{
           backgroundImage: "url('/grid-pattern.svg')",
           backgroundSize: '200px 200px',
           backgroundRepeat: 'repeat',
-          animation: 'fadeInScale 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards, moveBackground 30s linear infinite'
+          animation: 'moveBackground 30s linear infinite'
         }}
       />
       
