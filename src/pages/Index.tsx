@@ -47,19 +47,6 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-[#0D0D1F] via-[#151629] to-[#0D0D1F]">
-      {/* Network Background Image */}
-      <div 
-        className="absolute inset-0 z-0 opacity-0 animate-fadeInScale"
-        style={{
-          backgroundImage: "url('/lovable-uploads/fe3dee95-799a-4ad3-bb1b-3cf938f5a3fa.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          mixBlendMode: 'screen',
-          animation: 'fadeInScale 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards, glow 5s ease-in-out infinite'
-        }}
-      />
-      
       {/* Grid Pattern Background */}
       <div 
         className="absolute inset-0 z-0 opacity-0 animate-fadeInScale"
