@@ -77,15 +77,15 @@ export default {
         glow: {
           "0%": { 
             opacity: "1",
-            filter: "drop-shadow(0 0 0 rgba(155, 135, 245, 0))"
+            filter: "drop-shadow(0 0 0 rgba(10, 102, 194, 0))"
           },
           "50%": { 
             opacity: "0.98",
-            filter: "drop-shadow(0 0 3px rgba(155, 135, 245, 0.2))"
+            filter: "drop-shadow(0 0 3px rgba(10, 102, 194, 0.2))"
           },
           "100%": { 
             opacity: "1",
-            filter: "drop-shadow(0 0 0 rgba(155, 135, 245, 0))"
+            filter: "drop-shadow(0 0 0 rgba(10, 102, 194, 0))"
           }
         },
         revealUp: {
@@ -102,11 +102,11 @@ export default {
         },
         glowBg: {
           "0%": { 
-            backgroundColor: "rgba(21, 22, 41, 0)",
+            backgroundColor: "rgba(10, 102, 194, 0)",
             backdropFilter: "blur(0px)"
           },
           "100%": { 
-            backgroundColor: "rgba(21, 22, 41, 0.8)",
+            backgroundColor: "rgba(10, 102, 194, 0.8)",
             backdropFilter: "blur(8px)"
           }
         },
