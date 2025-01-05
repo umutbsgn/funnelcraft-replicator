@@ -111,18 +111,18 @@ export const Hero = () => {
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-10 transition-all duration-500 ease-in-out hover:scale-105">
-          Verwandeln Sie Potenziale in Gewinne – <br />
-          <span className="text-primary animate-textGlow">mit unserer KI-Unterstützung.</span>
+          KI-Power für Ihren Vorsprung: <br />
+          <span className="text-primary animate-textGlow">30% mehr Effizienz garantiert</span>
         </h1>
         <p className="text-lg sm:text-xl lg:text-2xl mb-12 md:mb-16 max-w-xl md:max-w-2xl text-gray-300 transition-opacity duration-300 hover:opacity-90">
-          Sparen Sie Ressourcen und steigern Sie Ihre Produktivität – ohne zusätzlichen Aufwand. Lassen Sie uns Ihnen zeigen, wie Ihr Unternehmen das Maximum herausholt.
+          In 30 Minuten zeigen wir Ihnen, wie Sie durch KI-Integration Ihre Prozesse revolutionieren und Kosten drastisch senken
         </p>
         <Button 
           onClick={scrollToCalendly}
           className="relative bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-4 sm:py-6 text-lg sm:text-xl rounded-xl shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 animate-buttonGlow"
-          aria-label="Kostenfreies Strategiegespräch sichern"
+          aria-label="Jetzt kostenloses Potenzial-Gespräch sichern"
         >
-          Kostenfreies Strategiegespräch sichern
+          Jetzt kostenloses Potenzial-Gespräch sichern
         </Button>
       </main>
     </>

@@ -3,10 +3,10 @@ export const Partners = () => {
     <div className="py-32 md:py-48 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-center">
-          Diese Marktführer vertrauen auf unsere KI-Lösungen – warum nicht auch Sie?
+          Marktführer setzen auf uns - aus gutem Grund:
         </h2>
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto text-center mb-24">
-          Unsere maßgeschneiderten Lösungen haben Unternehmen geholfen, Kosten zu senken, Fehler zu minimieren und ihre Effizienz zu steigern. Sehen Sie selbst, wie Sie Ihre Konkurrenz übertreffen können.
+          Von mittelständischen Unternehmen bis zu Konzernen: Unsere KI-Lösungen steigern nachweislich Effizienz und Gewinn
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 place-items-center mx-auto max-w-4xl">
           <div className="w-32 md:w-48 h-20 md:h-24 flex items-center justify-center bg-black/20 backdrop-blur-xl border border-white/10 rounded-lg p-4 group transition-all duration-500 ease-in-out hover:scale-110 hover:bg-black/30 hover:border-primary/50">

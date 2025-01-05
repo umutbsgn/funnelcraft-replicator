@@ -4,17 +4,16 @@ export const ProcessSteps = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-32 space-y-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-24">
-            Lassen Sie sich keine Chancen entgehen – <br />
-            <span className="text-gray-400">planen Sie jetzt Ihren Vorsprung!</span>
+            In 30 Minuten zu Ihrer individuellen KI-Strategie
           </h2>
           <div className="space-y-6">
             <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-              Das kostenfreie Erstgespräch zeigt Ihnen innerhalb von 30 Minuten, wie Sie...
+              Sichern Sie sich jetzt:
             </p>
             <ul className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto space-y-4">
-              <li>• bis zu 30 % Ihrer Ressourcen sparen können.</li>
-              <li>• fehleranfällige Prozesse durch smarte Automatisierung ersetzen.</li>
-              <li>• mit modernster Technologie Schritt halten und Ihre Konkurrenz überholen.</li>
+              <li>• Erhalten Sie Ihren konkreten Optimierungsplan</li>
+              <li>• Erfahren Sie Ihr Einsparpotenzial in Zahlen</li>
+              <li>• Keine Verpflichtung, 100% kostenlos</li>
             </ul>
           </div>
         </div>
