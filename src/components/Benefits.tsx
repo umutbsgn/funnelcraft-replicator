@@ -20,16 +20,15 @@ export const Benefits = () => {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              // Changed delay from 1.5s to 1s intervals
               setTimeout(() => {
                 entry.target.classList.remove('opacity-0', 'translate-x-[-50px]');
-                entry.target.classList.add('opacity-100', 'translate-x-0', 'transition-all', 'duration-1000');
+                entry.target.classList.add('opacity-100', 'translate-x-0', 'transition-all', 'duration-700');
                 
                 // Add glow effect after the reveal animation
                 setTimeout(() => {
                   entry.target.classList.add('hover:bg-black/30', 'hover:shadow-[0_0_15px_rgba(155,135,245,0.3)]');
-                }, 1000); // Add glow effect 1s after the reveal
-              }, index * 1000); // Changed from 1500 to 1000ms delay between each animation
+                }, 700); // Changed from 1000 to 700ms for glow effect timing
+              }, index * 700); // Changed from 1000 to 700ms delay between each animation
               observer.unobserve(entry.target);
             }
           });
