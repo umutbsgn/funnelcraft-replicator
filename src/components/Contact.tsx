@@ -10,32 +10,38 @@ export const Contact = () => {
 
     // Function to remove Calendly branding
     const removeCalendlyBranding = () => {
-      const brandingElement = document.querySelector('a[href*="calendly.com/de"]');
-      if (brandingElement) {
-        brandingElement.remove();
-      }
+      const brandingElements = document.querySelectorAll('a[href*="calendly.com"]');
+      brandingElements.forEach(element => {
+        if (element) {
+          element.remove();
+        }
+      });
     };
 
+    // Initial check
+    removeCalendlyBranding();
+
     // Set up an observer to watch for the branding element
-    const observer = new MutationObserver((mutations, obs) => {
-      const brandingElement = document.querySelector('a[href*="calendly.com/de"]');
-      if (brandingElement) {
-        removeCalendlyBranding();
-        // Keep observing in case Calendly re-adds the element
-        setTimeout(removeCalendlyBranding, 1000); // Additional check after 1 second
-      }
+    const observer = new MutationObserver(() => {
+      removeCalendlyBranding();
     });
 
-    // Start observing the document with the configured parameters
+    // Start observing with a more comprehensive configuration
     observer.observe(document.body, {
       childList: true,
-      subtree: true
+      subtree: true,
+      attributes: true,
+      characterData: true
     });
+
+    // Set up an interval to periodically check and remove the branding
+    const interval = setInterval(removeCalendlyBranding, 1000);
 
     return () => {
       // Cleanup
       document.body.removeChild(script);
       observer.disconnect();
+      clearInterval(interval);
     };
   }, []);
 
