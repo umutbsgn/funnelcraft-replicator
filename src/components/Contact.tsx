@@ -22,7 +22,7 @@ export const Contact = () => {
       <div className="w-full max-w-4xl mx-auto">
         <div 
           className="calendly-inline-widget" 
-          data-url="https://calendly.com/data_ub/discovery_call" 
+          data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1" 
           style={{minWidth:"320px",height:"700px"}}
         ></div>
       </div>
