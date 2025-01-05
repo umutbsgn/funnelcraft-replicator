@@ -1,4 +1,45 @@
+import { useEffect, useRef } from 'react';
+
 export const Benefits = () => {
+  const observerRefs = useRef<IntersectionObserver[]>([]);
+  const articleRefs = useRef<(HTMLElement | null)[]>([]);
+
+  useEffect(() => {
+    // Cleanup previous observers
+    observerRefs.current.forEach(observer => observer.disconnect());
+    observerRefs.current = [];
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    articleRefs.current.forEach((article, index) => {
+      if (article) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              // Add staggered delay based on index
+              setTimeout(() => {
+                entry.target.classList.add('scale-105', 'transition-transform', 'duration-700');
+              }, index * 200); // 200ms delay between each animation
+              observer.unobserve(entry.target);
+            }
+          });
+        }, observerOptions);
+
+        observer.observe(article);
+        observerRefs.current.push(observer);
+      }
+    });
+
+    // Cleanup function
+    return () => {
+      observerRefs.current.forEach(observer => observer.disconnect());
+    };
+  }, []);
+
   return (
     <section className="py-32 md:py-48 px-4 md:px-8" aria-labelledby="benefits-title">
       <div className="max-w-6xl mx-auto">
@@ -7,7 +48,10 @@ export const Benefits = () => {
           <span className="text-primary">sofort stärker machen:</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          <article className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 hover:scale-105 group">
+          <article 
+            ref={el => articleRefs.current[0] = el}
+            className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 group"
+          >
             <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
                 src="/lovable-uploads/2428615f-26f0-4300-95a1-9d09bb4b648f.png" 
@@ -25,7 +69,10 @@ export const Benefits = () => {
             </p>
           </article>
           
-          <article className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 hover:scale-105 group">
+          <article 
+            ref={el => articleRefs.current[1] = el}
+            className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 group"
+          >
             <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
                 src="/lovable-uploads/69b6fa5a-f56e-47bb-bdd4-805ef4ba8e40.png" 
@@ -43,7 +90,10 @@ export const Benefits = () => {
             </p>
           </article>
           
-          <article className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 hover:scale-105 group">
+          <article 
+            ref={el => articleRefs.current[2] = el}
+            className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 group"
+          >
             <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
                 src="/lovable-uploads/d90e55ff-efe8-4e0e-9787-ae9c83e31393.png" 
