@@ -144,7 +144,7 @@ export default {
       },
       animation: {
         starTwinkle: "starTwinkle 3s ease-in-out infinite",
-        buttonGlow: "buttonGlow 12s ease-in-out infinite", // Slowed down from 6s to 12s
+        buttonGlow: "buttonGlow 4s ease-in-out infinite", // Changed from 12s to 4s to increase blink rate
         floatingOrb: "floatingOrb 6s ease-in-out infinite",
         textGlow: "textGlow 3s ease-in-out infinite",
         float: "float 3s ease-in-out infinite",
