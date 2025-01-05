@@ -1,7 +1,7 @@
 export const ProcessSteps = () => {
   return (
     <div className="py-32 md:py-48 px-4 md:px-8 relative overflow-hidden">
-      {/* Background Effects */}
+      {/* Enhanced Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D1F] via-[#151629] to-[#0D0D1F] opacity-90" />
       <div className="absolute inset-0">
         {[...Array(50)].map((_, i) => (
