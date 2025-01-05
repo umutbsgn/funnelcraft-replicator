@@ -47,7 +47,7 @@ export const Hero = () => {
                 className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-0.5 animate-buttonGlow"
                 aria-label="Kostenfreies Strategiegespräch sichern"
               >
-                Kostenfreies Strategiegespräch
+                Kostenloses Erstgespräch buchen
               </Button>
             </div>
 
@@ -81,7 +81,7 @@ export const Hero = () => {
                   className="w-full bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg shadow-lg transition-all duration-300"
                   aria-label="Kostenfreies Strategiegespräch sichern (Mobile)"
                 >
-                  Kostenfreies Strategiegespräch
+                  Kostenloses Erstgespräch buchen
                 </Button>
               </div>
             </div>
@@ -122,7 +122,7 @@ export const Hero = () => {
           className="relative bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-4 sm:py-6 text-lg sm:text-xl rounded-xl shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 animate-buttonGlow"
           aria-label="Jetzt kostenloses Potenzial-Gespräch sichern"
         >
-          Jetzt kostenloses Potenzial-Gespräch sichern
+          Kostenloses Erstgespräch buchen
         </Button>
       </main>
     </>
