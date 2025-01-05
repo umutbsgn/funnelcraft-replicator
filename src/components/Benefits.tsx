@@ -20,10 +20,11 @@ export const Benefits = () => {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              // Add staggered delay based on index
+              // Add staggered delay based on index with 1.5s intervals
               setTimeout(() => {
-                entry.target.classList.add('scale-105', 'transition-transform', 'duration-700');
-              }, index * 200); // 200ms delay between each animation
+                entry.target.classList.remove('opacity-0', 'translate-x-[-50px]');
+                entry.target.classList.add('opacity-100', 'translate-x-0', 'transition-all', 'duration-1000');
+              }, index * 1500); // 1.5s (1500ms) delay between each animation
               observer.unobserve(entry.target);
             }
           });
@@ -50,7 +51,7 @@ export const Benefits = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           <article 
             ref={el => articleRefs.current[0] = el}
-            className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 group"
+            className="opacity-0 translate-x-[-50px] space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 group"
           >
             <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
@@ -71,7 +72,7 @@ export const Benefits = () => {
           
           <article 
             ref={el => articleRefs.current[1] = el}
-            className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 group"
+            className="opacity-0 translate-x-[-50px] space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 group"
           >
             <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
@@ -92,7 +93,7 @@ export const Benefits = () => {
           
           <article 
             ref={el => articleRefs.current[2] = el}
-            className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 group"
+            className="opacity-0 translate-x-[-50px] space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 group"
           >
             <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
