@@ -35,7 +35,7 @@ export const Contact = () => {
     });
 
     // Set up an interval to periodically check and remove the branding
-    const interval = setInterval(removeCalendlyBranding, 1000);
+    const interval = setInterval(removeCalendlyBranding, 5000);
 
     return () => {
       // Cleanup
