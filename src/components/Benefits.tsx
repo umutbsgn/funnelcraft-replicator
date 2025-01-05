@@ -28,7 +28,7 @@ export const Benefits = () => {
           <article className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 hover:scale-105 group">
             <div className="h-64 md:h-64 w-full mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img 
-                src="/lovable-uploads/f469afe8-8921-46df-9271-babf058c4b13.png" 
+                src="/lovable-uploads/69b6fa5a-f56e-47bb-bdd4-805ef4ba8e40.png" 
                 alt="KI-Telefonagenten" 
                 className="w-full h-full object-cover transform transition-all duration-500 group-hover:scale-105 group-hover:brightness-125 group-hover:drop-shadow-[0_0_15px_rgba(155,135,245,0.5)]"
                 loading="lazy"
