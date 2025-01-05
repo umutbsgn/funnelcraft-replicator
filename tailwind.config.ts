@@ -18,57 +18,115 @@ export default {
       },
     },
     extend: {
-      fontFamily: {
-        sans: ['-apple-system', 'system-ui', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "#FFFFFF",
-        foreground: "#333333",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#0288D1",
-          light: "#E0F7FA",
-          lighter: "#B3E5FC",
-          dark: "#01579B",
-          hover: "#039BE5",
+          DEFAULT: "#9B87F5",
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#F3F2EF",
-          foreground: "#333333",
+          DEFAULT: "#1A1F2C",
+          foreground: "#FFFFFF",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "#F5F5F5",
-          foreground: "#666666",
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "#0277BD",
-          foreground: "#FFFFFF",
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
         card: {
-          DEFAULT: "#FFFFFF",
-          foreground: "#333333",
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
         },
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(circle, #FFFFFF 0%, #E0F7FA 100%)',
-        'gradient-linear': 'linear-gradient(to right, #E0F7FA 0%, #B3E5FC 100%)',
-        'gradient-button': 'linear-gradient(to right, #0277BD 0%, #01579B 100%)',
-        'gradient-button-hover': 'linear-gradient(to right, #039BE5 0%, #0288D1 100%)',
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0", transform: "translateY(30px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        slideInLeft: {
+          "0%": { opacity: "0", transform: "translateX(-30px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        slideInRight: {
+          "0%": { opacity: "0", transform: "translateX(30px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        float: {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-8px)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        glow: {
+          "0%": { 
+            opacity: "1",
+            filter: "drop-shadow(0 0 0 rgba(155, 135, 245, 0))"
+          },
+          "50%": { 
+            opacity: "0.98",
+            filter: "drop-shadow(0 0 3px rgba(155, 135, 245, 0.2))"
+          },
+          "100%": { 
+            opacity: "1",
+            filter: "drop-shadow(0 0 0 rgba(155, 135, 245, 0))"
+          }
+        },
+        revealUp: {
+          "0%": { 
+            opacity: "0",
+            transform: "translateY(15px)",
+            filter: "blur(3px)"
+          },
+          "100%": { 
+            opacity: "1",
+            transform: "translateY(0)",
+            filter: "blur(0)"
+          }
+        },
+        glowBg: {
+          "0%": { 
+            backgroundColor: "rgba(21, 22, 41, 0)",
+            backdropFilter: "blur(0px)"
+          },
+          "100%": { 
+            backgroundColor: "rgba(21, 22, 41, 0.8)",
+            backdropFilter: "blur(8px)"
+          }
+        },
+        fadeInScale: {
+          "0%": { 
+            opacity: "0",
+            transform: "scale(0.95) translateY(20px)"
+          },
+          "100%": { 
+            opacity: "1",
+            transform: "scale(1) translateY(0)"
+          }
+        }
       },
-      boxShadow: {
-        'card': '0 4px 6px -1px rgba(179, 229, 252, 0.1), 0 2px 4px -1px rgba(179, 229, 252, 0.06)',
-        'card-hover': '0 10px 15px -3px rgba(179, 229, 252, 0.2), 0 4px 6px -2px rgba(179, 229, 252, 0.1)',
+      animation: {
+        fadeIn: "fadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        slideInLeft: "slideInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        slideInRight: "slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        float: "float 3s ease-in-out infinite",
+        glow: "glow 3s ease-in-out infinite",
+        revealUp: "revealUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        glowBg: "glowBg 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        fadeInScale: "fadeInScale 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards"
       },
     },
   },

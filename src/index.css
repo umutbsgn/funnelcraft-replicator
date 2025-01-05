@@ -4,65 +4,35 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 20%;
-    
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 20%;
-    
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 20%;
-    
-    --primary: 200 89% 41%;
-    --primary-foreground: 0 0% 100%;
-    
-    --secondary: 0 0% 95%;
-    --secondary-foreground: 0 0% 20%;
-    
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 40%;
-    
-    --accent: 201 97% 45%;
-    --accent-foreground: 0 0% 100%;
-    
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-    
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 200 89% 41%;
-    
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 0 0% 20%;
+    --background: 240 33% 9%;
     --foreground: 0 0% 100%;
     
-    --card: 0 0% 20%;
+    --card: 240 33% 9%;
     --card-foreground: 0 0% 100%;
     
-    --popover: 0 0% 20%;
+    --popover: 240 33% 9%;
     --popover-foreground: 0 0% 100%;
     
-    --primary: 200 89% 41%;
+    --primary: 252 86% 75%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 0 0% 25%;
+    --secondary: 225 25% 14%;
     --secondary-foreground: 0 0% 100%;
     
-    --muted: 0 0% 25%;
-    --muted-foreground: 0 0% 76%;
+    --muted: 240 33% 9%;
+    --muted-foreground: 0 0% 100%;
     
-    --accent: 201 97% 45%;
+    --accent: 252 86% 75%;
     --accent-foreground: 0 0% 100%;
     
-    --destructive: 0 84% 60%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 0 0% 25%;
-    --input: 0 0% 25%;
-    --ring: 200 89% 41%;
+    --border: 240 33% 9%;
+    --input: 240 33% 9%;
+    --ring: 252 86% 75%;
+    
+    --radius: 0.5rem;
   }
 }
 
@@ -71,62 +41,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground transition-colors duration-300;
+    @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-  h1 {
-    @apply text-4xl font-bold tracking-tight text-primary-dark md:text-5xl lg:text-6xl;
-  }
-  h2 {
-    @apply text-3xl font-semibold tracking-tight text-primary-dark md:text-4xl lg:text-5xl;
-  }
-  h3 {
-    @apply text-2xl font-semibold tracking-tight text-primary-dark md:text-3xl;
-  }
-  p {
-    @apply leading-relaxed text-foreground text-base md:text-lg;
-  }
-  a {
-    @apply text-accent hover:text-primary-dark underline-offset-4 hover:underline transition-colors duration-200;
-  }
-}
-
-@layer components {
-  .card {
-    @apply bg-card shadow-card hover:shadow-card-hover transition-shadow duration-300 rounded-lg p-6;
-  }
-  
-  .btn-primary {
-    @apply bg-gradient-button hover:bg-gradient-button-hover text-white px-6 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl;
-  }
-  
-  .section {
-    @apply py-16 md:py-24;
-  }
-  
-  .section-alt {
-    @apply bg-primary-lighter bg-opacity-10;
-  }
-}
-
-/* Improved focus styles for better accessibility */
-@layer utilities {
-  .focus-ring {
-    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background;
-  }
-}
-
-/* Loading animation */
-.loading {
-  @apply animate-pulse bg-muted rounded;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Improved button accessibility */
-button, a {
-  @apply focus-ring;
 }
