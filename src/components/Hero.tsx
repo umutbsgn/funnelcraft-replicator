@@ -116,7 +116,7 @@ export const Hero = () => {
           className={`
             relative 
             text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
-            font-bold mb-8 md:mb-10 
+            font-bold mb-12 md:mb-16 
             transition-all duration-1000 
             ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
           `}
@@ -141,9 +141,28 @@ export const Hero = () => {
           </span>
         </h1>
 
-        <p className="text-lg sm:text-xl lg:text-2xl mb-16 md:mb-20 max-w-xl md:max-w-2xl text-gray-300 transition-opacity duration-300 hover:opacity-90">
-          In 30 Minuten zeigen wir Ihnen, wie Sie durch KI-Integration Ihre Prozesse revolutionieren und Kosten drastisch senken
-        </p>
+        <div className="relative group">
+          <p className={`
+            relative z-10
+            text-lg sm:text-xl lg:text-2xl 
+            mb-16 md:mb-20 
+            max-w-xl md:max-w-2xl 
+            text-transparent bg-clip-text 
+            bg-gradient-to-r from-white via-primary/90 to-white
+            transition-all duration-700
+            ${isVisible ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-10 blur-sm'}
+          `}>
+            <span className="relative inline-block group-hover:animate-float">In 30 Minuten</span>{" "}
+            <span className="relative inline-block group-hover:animate-float" style={{ animationDelay: "0.1s" }}>zeigen wir Ihnen,</span>{" "}
+            <span className="relative inline-block group-hover:animate-float" style={{ animationDelay: "0.2s" }}>wie Sie durch</span>{" "}
+            <span className="relative inline-block font-semibold group-hover:animate-float animate-glow" style={{ animationDelay: "0.3s" }}>KI-Integration</span>{" "}
+            <span className="relative inline-block group-hover:animate-float" style={{ animationDelay: "0.4s" }}>Ihre Prozesse</span>{" "}
+            <span className="relative inline-block font-semibold group-hover:animate-float animate-glow" style={{ animationDelay: "0.5s" }}>revolutionieren</span>{" "}
+            <span className="relative inline-block group-hover:animate-float" style={{ animationDelay: "0.6s" }}>und</span>{" "}
+            <span className="relative inline-block font-semibold group-hover:animate-float animate-glow" style={{ animationDelay: "0.7s" }}>Kosten drastisch senken</span>
+          </p>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 blur-3xl opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+        </div>
 
         <Button 
           onClick={scrollToCalendly}
