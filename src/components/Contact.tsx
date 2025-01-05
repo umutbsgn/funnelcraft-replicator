@@ -19,17 +19,14 @@ export const Contact = () => {
         </div>
         
         <div 
-          className="calendly-inline-widget !block !visible rounded-xl shadow-2xl bg-black/20 backdrop-blur-xl" 
+          className="calendly-inline-widget rounded-xl shadow-2xl bg-black/20 backdrop-blur-xl" 
           data-url="https://calendly.com/data_ub/discovery_call?hide_event_type_details=1&hide_gdpr_banner=1" 
           style={{
             minWidth: "320px",
             height: "700px",
-            background: "transparent",
-            display: "block",
-            visibility: "visible",
-            opacity: 1,
             position: "relative",
-            zIndex: 10
+            zIndex: 10,
+            overflow: "hidden"
           } as React.CSSProperties}
           role="complementary"
           aria-label="Kalenderbuchung"
