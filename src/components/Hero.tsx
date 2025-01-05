@@ -4,12 +4,14 @@ import { useState, useEffect } from "react";
 export const Hero = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
+    setIsVisible(true);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -110,12 +112,39 @@ export const Hero = () => {
           <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-primary/20 rounded-full blur-3xl animate-floatingOrb" style={{ animationDelay: "-2s" }} />
         </div>
 
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-10 transition-all duration-500 ease-in-out hover:scale-105">
-          KI-Power für Ihren Vorsprung
+        <h1 
+          className={`
+            relative 
+            text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
+            font-bold mb-8 md:mb-10 
+            transition-all duration-1000 
+            ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
+          `}
+        >
+          <span className="relative inline-block">
+            <span className="relative z-10 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent animate-textGlow">
+              KI-Power
+            </span>
+            <div className="absolute -inset-1 bg-primary/20 blur-lg animate-pulse rounded-lg" />
+          </span>{" "}
+          <span className="relative inline-block">
+            <span className="relative z-10">
+              für Ihren
+            </span>
+            <div className="absolute -inset-1 bg-primary/10 blur-md animate-pulse rounded-lg" style={{ animationDelay: "0.2s" }} />
+          </span>{" "}
+          <span className="relative inline-block">
+            <span className="relative z-10 bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent animate-textGlow" style={{ animationDelay: "0.4s" }}>
+              Vorsprung
+            </span>
+            <div className="absolute -inset-1 bg-primary/20 blur-lg animate-pulse rounded-lg" style={{ animationDelay: "0.4s" }} />
+          </span>
         </h1>
+
         <p className="text-lg sm:text-xl lg:text-2xl mb-16 md:mb-20 max-w-xl md:max-w-2xl text-gray-300 transition-opacity duration-300 hover:opacity-90">
           In 30 Minuten zeigen wir Ihnen, wie Sie durch KI-Integration Ihre Prozesse revolutionieren und Kosten drastisch senken
         </p>
+
         <Button 
           onClick={scrollToCalendly}
           className="relative bg-primary hover:bg-primary/90 text-white px-8 sm:px-10 py-6 sm:py-8 text-xl sm:text-2xl rounded-xl shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 animate-buttonGlow"
