@@ -4,16 +4,18 @@ export const ProcessSteps = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-32 space-y-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-24">
-            Starten Sie mit uns <br />
-            <span className="text-gray-400">in die Zukunft.</span>
+            Lassen Sie sich keine Chancen entgehen – <br />
+            <span className="text-gray-400">planen Sie jetzt Ihren Vorsprung!</span>
           </h2>
           <div className="space-y-6">
             <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-              Planung, Umsetzung, Wartung und Support –
+              Das kostenfreie Erstgespräch zeigt Ihnen innerhalb von 30 Minuten, wie Sie...
             </p>
-            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-              Ihr Rundum-sorglos-Paket für KI-Lösungen im Unternehmen.
-            </p>
+            <ul className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto space-y-4">
+              <li>• bis zu 30 % Ihrer Ressourcen sparen können.</li>
+              <li>• fehleranfällige Prozesse durch smarte Automatisierung ersetzen.</li>
+              <li>• mit modernster Technologie Schritt halten und Ihre Konkurrenz überholen.</li>
+            </ul>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">

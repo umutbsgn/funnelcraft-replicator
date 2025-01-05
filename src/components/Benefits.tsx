@@ -3,8 +3,8 @@ export const Benefits = () => {
     <section className="py-32 md:py-48 px-4 md:px-8" aria-labelledby="benefits-title">
       <div className="max-w-6xl mx-auto">
         <h2 id="benefits-title" className="text-4xl md:text-5xl lg:text-6xl font-bold mb-24 md:mb-32 text-center px-4 md:px-0 text-white">
-          Skalieren Sie ihr Geschäft,<br />
-          <span className="text-primary">nicht Ihren Workload.</span>
+          Machen Sie Ihr Unternehmen<br />
+          <span className="text-primary">zukunftssicher – automatisiert, effizient, erfolgreich.</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           <article className="space-y-4 p-6 md:p-8 rounded-lg transition-all duration-500 ease-in-out hover:bg-black/30 backdrop-blur-xl bg-black/20 border border-white/10 hover:scale-105 group">
@@ -21,7 +21,7 @@ export const Benefits = () => {
             </div>
             <h3 className="text-lg md:text-xl font-bold transition-colors duration-300 group-hover:text-primary">KI-Integration</h3>
             <p className="text-sm md:text-base text-gray-300 transition-opacity duration-300 group-hover:opacity-90">
-              Nutzen Sie modernste KI-Technologie für Ihre Geschäftsprozesse.
+              Erleben Sie den Vorsprung durch maßgeschneiderte KI-Lösungen, die manuelle Prozesse überflüssig machen und Ihre Abläufe um 50 % effizienter gestalten.
             </p>
           </article>
           
@@ -39,7 +39,7 @@ export const Benefits = () => {
             </div>
             <h3 className="text-lg md:text-xl font-bold transition-colors duration-300 group-hover:text-primary">Prozessoptimierung</h3>
             <p className="text-sm md:text-base text-gray-300 transition-opacity duration-300 group-hover:opacity-90">
-              Automatisieren Sie wiederkehrende Aufgaben und steigern Sie die Effizienz.
+              Weniger Arbeitsschritte, mehr Output – unsere KI analysiert und optimiert, während Sie sich auf Wachstum konzentrieren.
             </p>
           </article>
           
@@ -57,7 +57,7 @@ export const Benefits = () => {
             </div>
             <h3 className="text-lg md:text-xl font-bold transition-colors duration-300 group-hover:text-primary">Skalierbarkeit</h3>
             <p className="text-sm md:text-base text-gray-300 transition-opacity duration-300 group-hover:opacity-90">
-              Wachsen Sie ohne proportional steigende Kosten.
+              Mit unseren Lösungen skaliert Ihr Geschäft ohne Mehraufwand – ideal für Expansion und neue Märkte.
             </p>
           </article>
         </div>

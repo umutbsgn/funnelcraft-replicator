@@ -45,9 +45,9 @@ export const Hero = () => {
               <Button 
                 onClick={scrollToCalendly}
                 className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-0.5 animate-buttonGlow"
-                aria-label="Kostenfreies Erstgespräch buchen"
+                aria-label="Kostenfreies Strategiegespräch sichern"
               >
-                Kostenfreies Erstgespräch
+                Kostenfreies Strategiegespräch
               </Button>
             </div>
 
@@ -79,9 +79,9 @@ export const Hero = () => {
                 <Button 
                   onClick={scrollToCalendly}
                   className="w-full bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg shadow-lg transition-all duration-300"
-                  aria-label="Kostenfreies Erstgespräch buchen (Mobile)"
+                  aria-label="Kostenfreies Strategiegespräch sichern (Mobile)"
                 >
-                  Kostenfreies Erstgespräch
+                  Kostenfreies Strategiegespräch
                 </Button>
               </div>
             </div>
@@ -110,19 +110,19 @@ export const Hero = () => {
           <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-primary/20 rounded-full blur-3xl animate-floatingOrb" style={{ animationDelay: "-2s" }} />
         </div>
 
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-16 md:mb-20 transition-all duration-500 ease-in-out hover:scale-105">
-          Wir sind Ihr <br />
-          <span className="text-primary animate-textGlow">Wettbewerbsvorteil.</span>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-10 transition-all duration-500 ease-in-out hover:scale-105">
+          Verwandeln Sie Potenziale in Gewinne – <br />
+          <span className="text-primary animate-textGlow">mit unserer KI-Unterstützung.</span>
         </h1>
         <p className="text-lg sm:text-xl lg:text-2xl mb-12 md:mb-16 max-w-xl md:max-w-2xl text-gray-300 transition-opacity duration-300 hover:opacity-90">
-          Mit maßgeschneiderten KI-Systemen steigern wir Ihre Effizienz, reduzieren Kosten und revolutionieren Ihre Geschäftsprozesse.
+          Sparen Sie Ressourcen und steigern Sie Ihre Produktivität – ohne zusätzlichen Aufwand. Lassen Sie uns Ihnen zeigen, wie Ihr Unternehmen das Maximum herausholt.
         </p>
         <Button 
           onClick={scrollToCalendly}
           className="relative bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-4 sm:py-6 text-lg sm:text-xl rounded-xl shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 animate-buttonGlow"
-          aria-label="Jetzt kostenloses Erstgespräch vereinbaren"
+          aria-label="Kostenfreies Strategiegespräch sichern"
         >
-          Kostenfreies Erstgespräch buchen
+          Kostenfreies Strategiegespräch sichern
         </Button>
       </main>
     </>
