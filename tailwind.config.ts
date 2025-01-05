@@ -85,46 +85,50 @@ export default {
             filter: "drop-shadow(0 0 0 rgba(155, 135, 245, 0))"
           }
         },
-        revealUp: {
-          "0%": { 
-            opacity: "0",
-            transform: "translateY(15px)",
-            filter: "blur(3px)"
+        "glow-star": {
+          "0%, 100%": { 
+            opacity: "0.5",
+            transform: "scale(1)",
+            filter: "drop-shadow(0 0 2px rgba(155, 135, 245, 0.5))"
           },
-          "100%": { 
+          "50%": { 
             opacity: "1",
-            transform: "translateY(0)",
-            filter: "blur(0)"
+            transform: "scale(1.2)",
+            filter: "drop-shadow(0 0 4px rgba(155, 135, 245, 0.8))"
           }
         },
-        glowBg: {
-          "0%": { 
-            backgroundColor: "rgba(21, 22, 41, 0)",
-            backdropFilter: "blur(0px)"
+        "glow-pulse": {
+          "0%, 100%": { 
+            opacity: "0"
           },
-          "100%": { 
-            backgroundColor: "rgba(21, 22, 41, 0.8)",
-            backdropFilter: "blur(8px)"
+          "50%": { 
+            opacity: "1"
           }
         },
-        fadeInScale: {
-          "0%": { 
-            opacity: "0",
-            transform: "scale(0.95) translateY(20px)"
+        shimmer: {
+          "0%": {
+            transform: "translateX(-100%)"
           },
-          "100%": { 
-            opacity: "1",
-            transform: "scale(1) translateY(0)"
+          "100%": {
+            transform: "translateX(100%)"
           }
         },
-        moveBackground: {
-          "0%": { 
-            backgroundPosition: "0 0"
+        "pulse-subtle": {
+          "0%, 100%": {
+            opacity: "1"
           },
-          "100%": { 
-            backgroundPosition: "200px 200px"
+          "50%": {
+            opacity: "0.85"
           }
-        }
+        },
+        "pulse-slow": {
+          "0%, 100%": {
+            opacity: "1"
+          },
+          "50%": {
+            opacity: "0.7"
+          }
+        },
       },
       animation: {
         fadeIn: "fadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards",
@@ -132,10 +136,11 @@ export default {
         slideInRight: "slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
         float: "float 3s ease-in-out infinite",
         glow: "glow 3s ease-in-out infinite",
-        revealUp: "revealUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        glowBg: "glowBg 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        fadeInScale: "fadeInScale 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        moveBackground: "moveBackground 30s linear infinite"
+        "glow-star": "glow-star 3s ease-in-out infinite",
+        "glow-pulse": "glow-pulse 2s ease-in-out infinite",
+        shimmer: "shimmer 2s linear infinite",
+        "pulse-subtle": "pulse-subtle 2s ease-in-out infinite",
+        "pulse-slow": "pulse-slow 4s ease-in-out infinite",
       },
     },
   },
