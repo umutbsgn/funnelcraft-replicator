@@ -25,12 +25,12 @@ export const Contact = () => {
             minWidth: "320px",
             height: "700px",
             background: "transparent",
-            display: "block !important",
-            visibility: "visible !important",
-            opacity: "1 !important",
+            display: "block",
+            visibility: "visible",
+            opacity: 1,
             position: "relative",
             zIndex: 10
-          }}
+          } as React.CSSProperties}
           role="complementary"
           aria-label="Kalenderbuchung"
         />
