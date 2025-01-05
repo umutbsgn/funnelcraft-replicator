@@ -116,6 +116,14 @@ export default {
             opacity: "1",
             transform: "scale(1) translateY(0)"
           }
+        },
+        moveBackground: {
+          "0%": { 
+            backgroundPosition: "0 0"
+          },
+          "100%": { 
+            backgroundPosition: "200px 200px"
+          }
         }
       },
       animation: {
@@ -126,7 +134,8 @@ export default {
         glow: "glow 3s ease-in-out infinite",
         revealUp: "revealUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards",
         glowBg: "glowBg 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards",
-        fadeInScale: "fadeInScale 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards"
+        fadeInScale: "fadeInScale 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        moveBackground: "moveBackground 30s linear infinite"
       },
     },
   },
