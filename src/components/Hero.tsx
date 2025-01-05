@@ -122,19 +122,19 @@ export const Hero = () => {
           `}
         >
           <span className="relative inline-block">
-            <span className="relative z-10 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent animate-textGlow">
+            <span className="relative z-10 text-white drop-shadow-[0_0_25px_rgba(155,135,245,0.7)]">
               KI-Power
             </span>
             <div className="absolute -inset-1 bg-primary/20 blur-lg animate-pulse rounded-lg" />
           </span>{" "}
           <span className="relative inline-block">
-            <span className="relative z-10">
+            <span className="relative z-10 text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">
               für Ihren
             </span>
             <div className="absolute -inset-1 bg-primary/10 blur-md animate-pulse rounded-lg" style={{ animationDelay: "0.2s" }} />
           </span>{" "}
           <span className="relative inline-block">
-            <span className="relative z-10 bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent animate-textGlow" style={{ animationDelay: "0.4s" }}>
+            <span className="relative z-10 text-white drop-shadow-[0_0_25px_rgba(155,135,245,0.7)]">
               Vorsprung
             </span>
             <div className="absolute -inset-1 bg-primary/20 blur-lg animate-pulse rounded-lg" style={{ animationDelay: "0.4s" }} />
@@ -147,19 +147,19 @@ export const Hero = () => {
             text-lg sm:text-xl lg:text-2xl 
             mb-16 md:mb-20 
             max-w-xl md:max-w-2xl 
-            text-transparent bg-clip-text 
-            bg-gradient-to-r from-white via-primary/90 to-white
+            text-white
+            drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]
             transition-all duration-700
             ${isVisible ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-10 blur-sm'}
           `}>
             <span className="relative inline-block group-hover:animate-float">In 30 Minuten</span>{" "}
             <span className="relative inline-block group-hover:animate-float" style={{ animationDelay: "0.1s" }}>zeigen wir Ihnen,</span>{" "}
             <span className="relative inline-block group-hover:animate-float" style={{ animationDelay: "0.2s" }}>wie Sie durch</span>{" "}
-            <span className="relative inline-block font-semibold group-hover:animate-float animate-glow" style={{ animationDelay: "0.3s" }}>KI-Integration</span>{" "}
+            <span className="relative inline-block font-semibold group-hover:animate-float animate-glow text-primary drop-shadow-[0_0_15px_rgba(155,135,245,0.7)]" style={{ animationDelay: "0.3s" }}>KI-Integration</span>{" "}
             <span className="relative inline-block group-hover:animate-float" style={{ animationDelay: "0.4s" }}>Ihre Prozesse</span>{" "}
-            <span className="relative inline-block font-semibold group-hover:animate-float animate-glow" style={{ animationDelay: "0.5s" }}>revolutionieren</span>{" "}
+            <span className="relative inline-block font-semibold group-hover:animate-float animate-glow text-primary drop-shadow-[0_0_15px_rgba(155,135,245,0.7)]" style={{ animationDelay: "0.5s" }}>revolutionieren</span>{" "}
             <span className="relative inline-block group-hover:animate-float" style={{ animationDelay: "0.6s" }}>und</span>{" "}
-            <span className="relative inline-block font-semibold group-hover:animate-float animate-glow" style={{ animationDelay: "0.7s" }}>Kosten drastisch senken</span>
+            <span className="relative inline-block font-semibold group-hover:animate-float animate-glow text-primary drop-shadow-[0_0_15px_rgba(155,135,245,0.7)]" style={{ animationDelay: "0.7s" }}>Kosten drastisch senken</span>
           </p>
           <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 blur-3xl opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
         </div>
