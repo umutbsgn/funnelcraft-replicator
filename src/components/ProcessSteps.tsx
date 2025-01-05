@@ -29,7 +29,7 @@ export const ProcessSteps = () => {
               <h3 className="text-2xl font-bold text-white">Discovery Call</h3>
             </div>
             <p className="text-gray-400">
-              Buchen Sie Ihren  kostenfreie Erstberatung mit einem unserer Experten. Im Anschluss erhalten Sie Ihr maßgeschneidertes Erfolgskonzept.
+              Buchen Sie Ihre kostenfreie Erstberatung mit einem unserer Experten. Im Anschluss erhalten Sie Ihr maßgeschneidertes Erfolgskonzept.
             </p>
           </div>
           <div className="space-y-4 p-6 rounded-lg bg-black/20 backdrop-blur-xl border border-white/10 transition-all duration-500 hover:bg-black/30 hover:scale-105">
