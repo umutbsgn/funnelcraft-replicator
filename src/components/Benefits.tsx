@@ -20,7 +20,7 @@ export const Benefits = () => {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              // Add staggered delay based on index with 1.5s intervals
+              // Changed delay from 1.5s to 1s intervals
               setTimeout(() => {
                 entry.target.classList.remove('opacity-0', 'translate-x-[-50px]');
                 entry.target.classList.add('opacity-100', 'translate-x-0', 'transition-all', 'duration-1000');
@@ -29,7 +29,7 @@ export const Benefits = () => {
                 setTimeout(() => {
                   entry.target.classList.add('hover:bg-black/30', 'hover:shadow-[0_0_15px_rgba(155,135,245,0.3)]');
                 }, 1000); // Add glow effect 1s after the reveal
-              }, index * 1500); // 1.5s (1500ms) delay between each animation
+              }, index * 1000); // Changed from 1500 to 1000ms delay between each animation
               observer.unobserve(entry.target);
             }
           });
