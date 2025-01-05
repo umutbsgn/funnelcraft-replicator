@@ -111,16 +111,15 @@ export const Hero = () => {
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-10 transition-all duration-500 ease-in-out hover:scale-105">
-          KI-Power für Ihren Vorsprung: <br />
-          <span className="text-primary animate-textGlow">30% mehr Effizienz garantiert</span>
+          KI-Power für Ihren Vorsprung
         </h1>
-        <p className="text-lg sm:text-xl lg:text-2xl mb-12 md:mb-16 max-w-xl md:max-w-2xl text-gray-300 transition-opacity duration-300 hover:opacity-90">
+        <p className="text-lg sm:text-xl lg:text-2xl mb-16 md:mb-20 max-w-xl md:max-w-2xl text-gray-300 transition-opacity duration-300 hover:opacity-90">
           In 30 Minuten zeigen wir Ihnen, wie Sie durch KI-Integration Ihre Prozesse revolutionieren und Kosten drastisch senken
         </p>
         <Button 
           onClick={scrollToCalendly}
-          className="relative bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-4 sm:py-6 text-lg sm:text-xl rounded-xl shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 animate-buttonGlow"
-          aria-label="Jetzt kostenloses Potenzial-Gespräch sichern"
+          className="relative bg-primary hover:bg-primary/90 text-white px-8 sm:px-10 py-6 sm:py-8 text-xl sm:text-2xl rounded-xl shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 animate-buttonGlow"
+          aria-label="Kostenloses Erstgespräch buchen"
         >
           Kostenloses Erstgespräch buchen
         </Button>
