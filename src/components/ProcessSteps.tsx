@@ -3,18 +3,19 @@ export const ProcessSteps = () => {
     <div className="py-32 md:py-48 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-32 space-y-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-24">
-            In 30 Minuten zu Ihrer individuellen KI-Strategie
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
+            Ihr Vorsprung beginnt hier.
           </h2>
+          <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
+            In 30 Minuten zu Ihrer maßgeschneiderten KI-Strategie.
+          </h3>
           <div className="space-y-6">
-            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-              Sichern Sie sich jetzt:
+            <p className="text-2xl md:text-3xl text-gray-300 font-semibold">
+              Planung, Umsetzung, Betreuung und Service
             </p>
-            <ul className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto space-y-4">
-              <li>• Erhalten Sie Ihren konkreten Optimierungsplan</li>
-              <li>• Erfahren Sie Ihr Einsparpotenzial in Zahlen</li>
-              <li>• Keine Verpflichtung, 100% kostenlos</li>
-            </ul>
+            <p className="text-xl md:text-2xl text-gray-400">
+              Ihre Komplettlösung für zukunftssichere KI-Systeme.
+            </p>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
@@ -28,7 +29,7 @@ export const ProcessSteps = () => {
               <h3 className="text-2xl font-bold text-white">Discovery Call</h3>
             </div>
             <p className="text-gray-400">
-              Buchen Sie einen unverbindlichen Discovery Call und profitieren Sie von einer kostenfreien Erstberatung. Im Anschluss erstellen wir für Sie ein individuelles Angebot.
+              Handeln Sie jetzt: In einem persönlichen Expertengespräch entdecken wir gemeinsam Ihre Potenziale. Sichern Sie sich Ihren kostenfreien Beratungstermin und profitieren Sie - wie unsere erfolgreichen Kunden - von konkreten Handlungsempfehlungen.
             </p>
           </div>
           <div className="space-y-4 p-6 rounded-lg bg-black/20 backdrop-blur-xl border border-white/10 transition-all duration-500 hover:bg-black/30 hover:scale-105">
@@ -39,7 +40,7 @@ export const ProcessSteps = () => {
               <h3 className="text-2xl font-bold text-white">Kick-Off Meeting</h3>
             </div>
             <p className="text-gray-400">
-              Unser Projektstart beginnt mit einem Kick-Off Meeting, in dem wir alle relevanten Informationen und Zugänge von Ihnen erhalten. Anschließend starten wir mit der Entwicklung Ihrer maßgeschneiderten KI-Automatisierung.
+              Erfolgreiche Unternehmen starten mit einem klaren Plan: Im gemeinsamen Workshop analysieren wir Ihre Prozesse und entwickeln Ihre optimale KI-Strategie.
             </p>
           </div>
           <div className="space-y-4 p-6 rounded-lg bg-black/20 backdrop-blur-xl border border-white/10 transition-all duration-500 hover:bg-black/30 hover:scale-105">
@@ -51,7 +52,7 @@ export const ProcessSteps = () => {
               <h3 className="text-2xl font-bold text-white">Wartung und Support</h3>
             </div>
             <p className="text-gray-400">
-              Als Full-Service-Agentur übernehmen wir gerne den Betrieb, die Wartung und den Support Ihrer KI-Lösung. Wir stehen Ihnen als langfristiger Partner zur Seite, damit Ihre Automatisierung jederzeit reibungslos läuft.
+              Führende Unternehmen setzen auf Expertise: Als Ihr KI-Partner kümmern wir uns um den reibungslosen Betrieb, während Sie sich auf Ihr Kerngeschäft konzentrieren.
             </p>
           </div>
         </div>
