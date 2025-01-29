@@ -22,16 +22,16 @@ export const Benefits = () => {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              const animationDelay = isMobile ? 200 : 700; // 0.2s for mobile, 0.7s for desktop
+              const animationDelay = isMobile ? 100 : 700; // Reduced from 200ms to 100ms for mobile
               setTimeout(() => {
                 entry.target.classList.remove('opacity-0', 'translate-x-[-50px]');
-                entry.target.classList.add('opacity-100', 'translate-x-0', 'transition-all', 'duration-700');
+                entry.target.classList.add('opacity-100', 'translate-x-0', 'transition-all', 'duration-500'); // Reduced from 700ms to 500ms
                 
                 // Add glow effect after the reveal animation
                 setTimeout(() => {
                   entry.target.classList.add('hover:bg-black/30', 'hover:shadow-[0_0_15px_rgba(155,135,245,0.3)]');
-                }, animationDelay); // Use same timing for glow effect
-              }, index * animationDelay); // Use calculated delay between each animation
+                }, animationDelay);
+              }, index * animationDelay);
               observer.unobserve(entry.target);
             }
           });
@@ -46,7 +46,7 @@ export const Benefits = () => {
     return () => {
       observerRefs.current.forEach(observer => observer.disconnect());
     };
-  }, [isMobile]); // Added isMobile to dependencies
+  }, [isMobile]);
 
   return (
     <section className="py-32 md:py-48 px-4 md:px-8" aria-labelledby="benefits-title">
