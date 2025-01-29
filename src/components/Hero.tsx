@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 export const Hero = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -93,28 +94,23 @@ export const Hero = () => {
 
       <main className="relative pt-32 pb-48 min-h-[90vh] flex flex-col justify-center items-center text-center px-4 sm:px-8 lg:px-16" role="main">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(20)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute animate-starTwinkle"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                width: `${Math.random() * 3}px`,
-                height: `${Math.random() * 3}px`,
-                backgroundColor: '#9B87F5',
-                borderRadius: '50%',
-                animationDelay: `${Math.random() * 3}s`,
-              }}
+          <div className="w-full h-full absolute">
+            <SparklesCore
+              id="tsparticlesheading"
+              background="transparent"
+              minSize={0.6}
+              maxSize={1.4}
+              particleDensity={100}
+              className="w-full h-full"
+              particleColor="#9B87F5"
+              speed={2}
             />
-          ))}
-          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/20 rounded-full blur-3xl animate-floatingOrb" />
-          <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-primary/20 rounded-full blur-3xl animate-floatingOrb" style={{ animationDelay: "-2s" }} />
+          </div>
         </div>
 
         <h1 
           className={`
-            relative 
+            relative z-10
             text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
             font-bold mb-12 md:mb-16 
             transition-all duration-1000 
@@ -140,29 +136,6 @@ export const Hero = () => {
             <div className="absolute -inset-1 bg-primary/20 blur-lg animate-pulse rounded-lg" style={{ animationDelay: "0.4s" }} />
           </span>
         </h1>
-
-        <div className="relative group">
-          <p className={`
-            relative z-10
-            text-lg sm:text-xl lg:text-2xl 
-            mb-16 md:mb-20 
-            max-w-xl md:max-w-2xl 
-            text-white
-            drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]
-            transition-all duration-700
-            ${isVisible ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-10 blur-sm'}
-          `}>
-            <span className="relative inline-block group-hover:animate-float">In 30 Minuten</span>{" "}
-            <span className="relative inline-block group-hover:animate-float" style={{ animationDelay: "0.1s" }}>zeigen wir Ihnen,</span>{" "}
-            <span className="relative inline-block group-hover:animate-float" style={{ animationDelay: "0.2s" }}>wie Sie durch</span>{" "}
-            <span className="relative inline-block font-semibold group-hover:animate-float animate-glow text-primary drop-shadow-[0_0_15px_rgba(155,135,245,0.7)]" style={{ animationDelay: "0.3s" }}>KI-Integration</span>{" "}
-            <span className="relative inline-block group-hover:animate-float" style={{ animationDelay: "0.4s" }}>Ihre Prozesse</span>{" "}
-            <span className="relative inline-block font-semibold group-hover:animate-float animate-glow text-primary drop-shadow-[0_0_15px_rgba(155,135,245,0.7)]" style={{ animationDelay: "0.5s" }}>revolutionieren</span>{" "}
-            <span className="relative inline-block group-hover:animate-float" style={{ animationDelay: "0.6s" }}>und</span>{" "}
-            <span className="relative inline-block font-semibold group-hover:animate-float animate-glow text-primary drop-shadow-[0_0_15px_rgba(155,135,245,0.7)]" style={{ animationDelay: "0.7s" }}>Kosten drastisch senken</span>
-          </p>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 blur-3xl opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
-        </div>
 
         <Button 
           onClick={scrollToCalendly}
