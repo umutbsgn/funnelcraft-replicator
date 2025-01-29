@@ -108,30 +108,42 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-12 md:mb-16 text-white">
-            KI-Power für Ihren Vorsprung
-          </h1>
-          
-          <div className="w-[40rem] h-40 relative">
-            {/* Gradients */}
-            <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-primary to-transparent h-[2px] w-3/4 blur-sm" />
-            <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-primary to-transparent h-px w-3/4" />
-            <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-primary/50 to-transparent h-[5px] w-1/4 blur-sm" />
-            <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-primary/50 to-transparent h-px w-1/4" />
+        <h1 
+          className={`
+            relative z-10
+            text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
+            font-bold mb-12 md:mb-16 
+            transition-all duration-1000 
+            ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
+          `}
+        >
+          <span className="relative inline-block">
+            <span className="relative z-10 text-white drop-shadow-[0_0_25px_rgba(155,135,245,0.7)]">
+              KI-Power
+            </span>
+            <div className="absolute -inset-1 bg-primary/20 blur-lg animate-pulse rounded-lg" />
+          </span>{" "}
+          <span className="relative inline-block">
+            <span className="relative z-10 text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">
+              für Ihren
+            </span>
+            <div className="absolute -inset-1 bg-primary/10 blur-md animate-pulse rounded-lg" style={{ animationDelay: "0.2s" }} />
+          </span>{" "}
+          <span className="relative inline-block">
+            <span className="relative z-10 text-white drop-shadow-[0_0_25px_rgba(155,135,245,0.7)]">
+              Vorsprung
+            </span>
+            <div className="absolute -inset-1 bg-primary/20 blur-lg animate-pulse rounded-lg" style={{ animationDelay: "0.4s" }} />
+          </span>
+        </h1>
 
-            {/* Radial Gradient to prevent sharp edges */}
-            <div className="absolute inset-0 w-full h-full bg-background [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,black)]"></div>
-          </div>
-
-          <Button 
-            onClick={scrollToCalendly}
-            className="relative bg-primary hover:bg-primary/90 text-white px-8 sm:px-10 py-6 sm:py-8 text-xl sm:text-2xl rounded-xl shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 animate-buttonGlow mt-8"
-            aria-label="Kostenloses Erstgespräch buchen"
-          >
-            Kostenloses Erstgespräch buchen
-          </Button>
-        </div>
+        <Button 
+          onClick={scrollToCalendly}
+          className="relative bg-primary hover:bg-primary/90 text-white px-8 sm:px-10 py-6 sm:py-8 text-xl sm:text-2xl rounded-xl shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 animate-buttonGlow"
+          aria-label="Kostenloses Erstgespräch buchen"
+        >
+          Kostenloses Erstgespräch buchen
+        </Button>
       </main>
     </>
   );
