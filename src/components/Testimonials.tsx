@@ -6,13 +6,13 @@ const testimonials = [
     quote: "Das Team hat uns echt begeistert! Von Tag 1 an war klar: Die wissen genau, was sie tun. Besonders cool war, wie schnell alles ging. Unser System läuft jetzt super smooth und das Feedback vom ganzen Team ist grandios. Die beste Entscheidung, die wir treffen konnten!",
     name: "Jan Bergmann",
     designation: "Head of Digital",
-    src: "/lovable-uploads/ccb2d1b1-1bef-45df-b3f0-1ca209ba4933.png"
+    src: "/lovable-uploads/15b502ee-8baf-4667-a433-c6f9a2b72c5a.png"
   },
   {
     quote: "Die Zusammenarbeit war einfach genial! Endlich ein Team, das nicht nur zuhört, sondern direkt versteht und umsetzt. Die Kommunikation war top, die Lösungen kreativ und das Ergebnis übertrifft alle Erwartungen. Meine Mitarbeiter sind happy und die Produktivität ist durch die Decke gegangen!",
     name: "Sarah Weber",
     designation: "Geschäftsführerin",
-    src: "/lovable-uploads/ccb2d1b1-1bef-45df-b3f0-1ca209ba4933.png"
+    src: "/lovable-uploads/eaffa4f0-cd0c-45e0-a494-df1c2fcb536c.png"
   }
 ];
 
